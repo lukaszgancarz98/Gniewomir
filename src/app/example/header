@@ -1,0 +1,10 @@
+<Header
+    title={title}
+    image="/logo.jpg"
+    enableLangage
+    menu={[
+        { key: 'home', label: 'home' },
+        { key: 'about', label: 'about' },
+        { key: 'contact', label: 'contact' },
+    ]}
+>{children}</Header>

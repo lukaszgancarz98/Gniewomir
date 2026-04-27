@@ -6,10 +6,20 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "prettier": "npx prettier src --check",
+    "prettier:fix": "npm run prettier -- --write",
+    "lint": "npx eslint src",
+    "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
+    "@ant-design/icons": "^6.1.1",
+    "@headlessui/react": "^2.2.10",
+    "antd": "^6.3.5",
+    "country-flag-icons": "^1.6.16",
+    "html-react-parser": "^6.0.1",
+    "lint": "^0.8.19",
     "next": "16.1.6",
+    "prettier": "^3.8.2",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
