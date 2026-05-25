@@ -1,6 +1,12 @@
 import { US, PL } from 'country-flag-icons/react/3x2';
 import { JSX } from 'react';
 import { Language } from './hooks/languageContext';
+import { messages } from './offer/messages';
+import { MessageObject } from './translator';
+
+export type OfferMenuItem = {
+    title: MessageObject;
+}
 
 export const availableLanguages: Array<{
     name: string;
@@ -30,4 +36,32 @@ export const mostpopularProducts = [
         description: 'Description of Product 3',
         price: '$30.00',
     },
+];
+
+export const offerMenu = [
+    {
+        title: messages.filter1,
+        tag: '1',
+    },
+    {
+        title: messages.filter2,
+        tag: '2',
+    },
+    {
+        title: messages.filter3,
+        tag: '3',
+    },
+    {
+        title: messages.filter4,
+        tag: '4',
+    },
+    {
+        title: messages.filter5,
+        tag: '5',
+    },
+    {
+        title: messages.filter6,
+        tag: '6',
+    },
+    
 ];

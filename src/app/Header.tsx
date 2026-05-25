@@ -20,12 +20,14 @@ export default function Header({
     enableLangage,
     children,
     menu,
+    childClassName,
 }: {
     title: string | React.JSX.Element | React.JSX.Element[];
     image?: string;
     enableLangage?: boolean;
     children?: React.ReactNode;
     menu?: MenuItem[];
+    childClassName?: string;
 }) {
     const { language, changeLanguage } = useLanguage();
 
@@ -81,7 +83,7 @@ export default function Header({
                     </div>
                 )}
             </div>
-            <div className="min-h-screen pt-35 h-auto">{children}</div>
+            <div className={`min-h-screen pt-40 h-auto ${childClassName}`}>{children}</div>
         </div>
     );
 }

@@ -3,7 +3,6 @@
 import {
     createContext,
     useContext,
-    useEffect,
     useState,
     ReactNode,
 } from 'react';
@@ -24,12 +23,17 @@ interface LanguageProviderProps {
 }
 
 export function LanguageProvider({ children }: LanguageProviderProps) {
-    const [lang, setLang] = useState<Language>('en');
+    const [lang, setLang] = useState<Language>(() => {
+        if (typeof window !== 'undefined') {
+            const language = sessionStorage.getItem('lang') as Language;
 
-    useEffect(() => {
-        const saved = sessionStorage.getItem('lang') as Language | null;
-        if (saved) setLang(saved);
-    }, []);
+            if (language) {
+                return language;
+            }
+        }
+
+        return 'en';
+    });
 
     const changeLang = (newLang: Language) => {
         setLang(newLang);

@@ -12,7 +12,7 @@ export default function AboutUs() {
             image="/logo.jpg"
             enableLangage
         >
-            <div className="flex flex-col bg-white text-black h-screen pt-10 items-center">
+            <div className="flex flex-col bg-white text-black min-h-screen pt-10 pb-20 items-center">
                 <div className='text-4xl'>
                     {translator(messages.title)}
                 </div>
