@@ -27,6 +27,9 @@ export default async function sendEmail({
                     <div class="wrap">
                     <div class="content">
                         <div>
+                            <p>Wysłane przez: ${email}</p>
+                        </div>
+                        <div>
                             ${message}
                         </div>
                     </div>
@@ -41,7 +44,7 @@ export default async function sendEmail({
         <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width,initial-scale=1">
-            <title>Potwierdzenie zamówienia</title>
+            <title>Pytanie/Zamówienie o produkt</title>
             <style>
             body {margin:0;padding:0;background:#f4f6f8;font-family:Arial,Helvetica,sans-serif;color:#333;}
             .wrap {max-width:600px;margin:24px auto;background:#fff;border-radius:8px;overflow:hidden;}
@@ -57,10 +60,11 @@ export default async function sendEmail({
 
     transporter
         .sendMail({
-            from: `G&G SIMULATIONS <${process.env.NEXT_PUBLIC_SEND_EMAIL}>`,
-            to: email,
+            from: `AUTO_SENDER <${process.env.NEXT_PUBLIC_SEND_EMAIL}>`,
+            to: process.env.NEXT_PUBLIC_SEND_EMAIL,
             subject: title,
             html: head,
+            replyTo: email,
         })
         .then(async () => {
             toast.info('Wiadomość została wysłana');
