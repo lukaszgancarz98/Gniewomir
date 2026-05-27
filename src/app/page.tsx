@@ -4,9 +4,11 @@ import translator from './translator';
 import { messages } from './messages';
 import Header from './Header';
 import MainPageProducts from '@/components/MainPageProducts.tsx/MainPageProducts';
-import { mostpopularProducts } from './constants';
+import { products } from './products/products';
 
 export default function Home() {
+    const mostpopularProducts = products.filter((product) => product.popular);
+
     return (
         <Header
             title={translator(messages.brandName)}
@@ -27,7 +29,7 @@ export default function Home() {
                 },
             ]}
         >
-            <div className="flex flex-col justify-center text-white h-screen pt-10">
+            <div className="flex flex-col justify-center text-black pt-10">
                 <div className="text-center text-4xl">
                     {translator(messages.pageTitle)}
                 </div>

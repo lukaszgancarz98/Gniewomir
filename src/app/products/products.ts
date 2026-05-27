@@ -17,6 +17,7 @@ export type Product = {
     priceExtension?: MessageObject;
     hideSetContentsTitle?: boolean;
     pricePrefix?: boolean;
+    popular?: boolean;
 };
 
 export const products: Product[] = [
@@ -136,6 +137,7 @@ export const products: Product[] = [
         price: 3000,
         images: ['wp2.jpg', 'wp2_1.jpg'],
         pricePrefix: true,
+        popular: true,
     },
     {
         id: 'massive_bleeding_catheter',
@@ -525,6 +527,7 @@ export const products: Product[] = [
             pl: 'Wszystkie elementy wykonane z lateksu.',
             en: 'All elements are made of latex.',
         },
+        popular: true,
     },
     {
         id: 'basic_civil_set',
@@ -835,6 +838,7 @@ export const products: Product[] = [
             'wytrzewienie_2.png',
             'wytrzewienie_3.jpg',
         ],
+        popular: true,
     },
     {
         id: 'amputated_limbs_and_fingers_set',
@@ -1202,10 +1206,11 @@ export const products: Product[] = [
         priceExtension: {
             id: 'product.trainer_stopping_bleeding_bandage_and_wound_packing_arm_without_shoulder.priceExtension',
             defaultMessage:
-                'Change of distribution or nature of injuries: additional 500 PLN',
-            pl: 'Zmiana rozkładu lub charakteru obrażeń: dopłata 500 PLN',
-            en: 'Change of distribution or nature of injuries: additional 500 PLN',
+                '<strong>Change of distribution or nature of injuries:</strong> additional 500 PLN',
+            pl: '<strong>Zmiana rozkładu lub charakteru obrażeń:</strong> dopłata 500 PLN',
+            en: '<strong>Change of distribution or nature of injuries:</strong> additional 500 PLN',
         },
+        popular: true,
     },
     {
         id: 'trainer_stopping_bleeding_bandage_and_wound_packing_leg',
@@ -1276,9 +1281,9 @@ export const products: Product[] = [
         priceExtension: {
             id: 'product.trainer_stopping_bleeding_bandage_and_wound_packing_leg.priceExtension',
             defaultMessage:
-                'Change of distribution or nature of injuries: additional 750 PLN',
-            pl: 'Zmiana rozkładu lub charakteru obrażeń: dopłata 750 PLN',
-            en: 'Change of distribution or nature of injuries: additional 750 PLN',
+                '<strong>Change of distribution or nature of injuries:</strong> additional 750 PLN',
+            pl: '<strong>Zmiana rozkładu lub charakteru obrażeń:</strong> dopłata 750 PLN',
+            en: '<strong>Change of distribution or nature of injuries:</strong> additional 750 PLN',
         },
     },
     {
@@ -1349,9 +1354,9 @@ export const products: Product[] = [
         priceExtension: {
             id: 'product.intraosseous_Access_Trainer_EZ_IO.priceExtension',
             defaultMessage:
-                'Change of distribution or nature of injuries: additional 750 PLN',
-            pl: 'Zmiana rozkładu lub charakteru obrażeń: dopłata 750 PLN',
-            en: 'Change of distribution or nature of injuries: additional 750 PLN',
+                '<strong>Change of distribution or nature of injuries:</strong> additional 750 PLN',
+            pl: '<strong>Zmiana rozkładu lub charakteru obrażeń:</strong> dopłata 750 PLN',
+            en: '<strong>Change of distribution or nature of injuries:</strong> additional 750 PLN',
         },
     },
     {

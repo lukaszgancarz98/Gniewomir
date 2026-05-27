@@ -72,7 +72,9 @@ export default function Product({ tag }: { tag: string }) {
                         {tagMenuTitle ? translator(tagMenuTitle) : ''}
                     </div>
                 </Link>
-                <div className={`flex w-full pt-10 ${(findProduct.additionalInfo || !onlyDescription) && 'mb-15'}`}>
+                <div
+                    className={`flex w-full pt-10 ${(findProduct.additionalInfo || !onlyDescription) && 'mb-15'}`}
+                >
                     <div className="w-full">
                         <Slider findProduct={findProduct} />
                     </div>
@@ -224,7 +226,9 @@ export default function Product({ tag }: { tag: string }) {
                     </div>
                 </div>
                 {!onlyDescription && (
-                    <div className={`${bottomInfoClassName} ${findProduct.additionalInfo ? '' : 'mb-15'}`}>
+                    <div
+                        className={`${bottomInfoClassName} ${findProduct.additionalInfo ? '' : 'mb-15'}`}
+                    >
                         {translator(findProduct.description)}
                     </div>
                 )}

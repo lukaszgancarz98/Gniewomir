@@ -30,6 +30,12 @@ export default function Products({ tag }: { tag: string }) {
             enableLangage
             menu={[
                 {
+                    key: 'offer',
+                    label: commonMessages.homeTitle,
+                    href: '/offer',
+                    usePopover: true,
+                },
+                {
                     key: 'about',
                     label: commonMessages.aboutTitle,
                     href: '/about-us',
@@ -45,7 +51,7 @@ export default function Products({ tag }: { tag: string }) {
                 <div className="relative flex justify-start w-[90%]">
                     <Link
                         href="/"
-                        className="text-xl font-medium z-50 group flex flex-row gap-2"
+                        className="text-xl font-medium z-20 group flex flex-row gap-2"
                     >
                         <svg
                             width="30px"
