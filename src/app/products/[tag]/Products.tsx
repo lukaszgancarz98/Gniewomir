@@ -34,6 +34,7 @@ export default function Products({ tag }: { tag: string }) {
                     label: commonMessages.homeTitle,
                     href: '/offer',
                     usePopover: true,
+                    disabledChoice: tag,
                 },
                 {
                     key: 'about',

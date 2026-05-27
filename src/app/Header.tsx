@@ -16,6 +16,7 @@ export type MenuItem = {
     label: MessageObject;
     href: string;
     usePopover?: boolean;
+    disabledChoice?: string;
 };
 export default function Header({
     title,
@@ -81,17 +82,32 @@ export default function Header({
                                         >
                                             <div className="text-black text-xl flex flex-col gap-3 px-5">
                                                 {offerMenu.map(
-                                                    (offer, index) => (
-                                                        <Link
-                                                            key={index}
-                                                            href={`/products/${offer.tag}`}
-                                                            className="block text-black text-center transition-transform hover:scale-120 w-auto hover:text-blue-500"
-                                                        >
-                                                            {translator(
-                                                                offer.title,
-                                                            )}
-                                                        </Link>
-                                                    ),
+                                                    (offer, index) => {
+                                                        if (
+                                                            item.disabledChoice ===
+                                                            offer.tag
+                                                        ) {
+                                                            return (
+                                                                <div className="text-gray-500 text-center w-auto">
+                                                                    {translator(
+                                                                        offer.title,
+                                                                    )}
+                                                                </div>
+                                                            );
+                                                        }
+
+                                                        return (
+                                                            <Link
+                                                                key={index}
+                                                                href={`/products/${offer.tag}`}
+                                                                className="block text-black text-center transition-transform hover:scale-120 w-auto hover:text-blue-500"
+                                                            >
+                                                                {translator(
+                                                                    offer.title,
+                                                                )}
+                                                            </Link>
+                                                        );
+                                                    },
                                                 )}
                                             </div>
                                         </div>

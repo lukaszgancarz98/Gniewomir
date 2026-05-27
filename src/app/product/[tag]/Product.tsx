@@ -8,6 +8,7 @@ import { offerMenu } from '@/app/constants';
 import Slider from '@/components/Slider';
 import { messages } from './messages';
 import Link from 'next/link';
+import language from '@/app/language';
 
 export default function Product({ tag }: { tag: string }) {
     const findProduct = products.find((p) => p.id === tag);
@@ -43,7 +44,7 @@ export default function Product({ tag }: { tag: string }) {
                 {
                     key: 'contact',
                     label: commonMessages.contactTitle,
-                    href: '/contact',
+                    href: `/contact/${(translator(findProduct.name) as string).replace(' ', '_').toLowerCase() + '+' + language()}`,
                 },
             ]}
         >
