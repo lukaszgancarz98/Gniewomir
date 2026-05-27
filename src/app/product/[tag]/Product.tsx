@@ -20,7 +20,7 @@ export default function Product({ tag }: { tag: string }) {
     }
 
     const bottomInfoClassName =
-        'text-center w-[80%] py-10 px-10 text-xl border-t-[1px] border-gray-300';
+        'text-center w-[60%] py-10 px-10 text-xl border-t-[1px] border-gray-300';
     const onlyDescription =
         findProduct.description &&
         !findProduct.setContents &&
@@ -47,7 +47,7 @@ export default function Product({ tag }: { tag: string }) {
                 },
             ]}
         >
-            <div className="flex flex-col w-full min-h-[calc(100vh-theme(space.40))] items-center mb-15">
+            <div className="flex flex-col w-full min-h-[calc(100vh-theme(space.40))] items-center">
                 <Link
                     href={`/products/${findProduct.tag}`}
                     className="text-xl flex justify-center w-[90%] py-5 border-b-[1px] border-gray-300 group gap-2"
@@ -72,7 +72,7 @@ export default function Product({ tag }: { tag: string }) {
                         {tagMenuTitle ? translator(tagMenuTitle) : ''}
                     </div>
                 </Link>
-                <div className="flex w-full py-10">
+                <div className={`flex w-full pt-10 ${(findProduct.additionalInfo || !onlyDescription) && 'mb-15'}`}>
                     <div className="w-full">
                         <Slider findProduct={findProduct} />
                     </div>
@@ -224,12 +224,12 @@ export default function Product({ tag }: { tag: string }) {
                     </div>
                 </div>
                 {!onlyDescription && (
-                    <div className={bottomInfoClassName}>
+                    <div className={`${bottomInfoClassName} ${findProduct.additionalInfo ? '' : 'mb-15'}`}>
                         {translator(findProduct.description)}
                     </div>
                 )}
                 {findProduct.additionalInfo && (
-                    <div className={bottomInfoClassName}>
+                    <div className={`${bottomInfoClassName} mb-15`}>
                         {translator(findProduct.additionalInfo)}
                     </div>
                 )}
