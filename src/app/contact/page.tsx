@@ -3,7 +3,6 @@
 import Header from '../Header';
 import translator from '../translator';
 import { messages as commonMessages } from '../messages';
-import { offerMenu } from '../constants';
 
 export default function page() {
     return (
@@ -24,17 +23,13 @@ export default function page() {
                 },
             ]}
         >
-            <div className="flex w-full h-full justify-center items-start">
-                <div className="flex flex-row w-screen max-w-[1600px] text-black">
-                    <div className="text-xl w-[25%] min-w-[400px] h-full flex flex-col gap-5 my-5 border-2">
-                        {offerMenu.map((offer, index) => (
-                            <div className="px-5" key={index}>
-                                {translator(offer.title)}
-                            </div>
-                        ))}
-                    </div>
-                    <div className="w-full h-full">Zydow</div>
-                </div>
+            <div className="flex flex-col gap-5 w-full min-h-[calc(100vh-theme(space.40))] justify-center items-center text-black text-3xl">
+                <div>E-mail: ggsimulations@gmail.com</div>
+                <div>Telefon: +48 693 414 504</div>
+                <textarea
+                    className="w-[800px] h-[200px] border-2 p-2 text-xl"
+                    placeholder="Napisz do nas wiadomość"
+                />
             </div>
         </Header>
     );

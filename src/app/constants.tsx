@@ -4,9 +4,7 @@ import { Language } from './hooks/languageContext';
 import { messages } from './offer/messages';
 import { MessageObject } from './translator';
 
-export type OfferMenuItem = {
-    title: MessageObject;
-}
+export type OfferMenuItem = { title: MessageObject; tag: string; href: string };
 
 export const availableLanguages: Array<{
     name: string;
@@ -38,30 +36,23 @@ export const mostpopularProducts = [
     },
 ];
 
-export const offerMenu = [
+export const offerMenu: OfferMenuItem[] = [
     {
         title: messages.filter1,
-        tag: '1',
+        tag: 'trauma_simulation_latex',
+        href: '/products',
     },
     {
         title: messages.filter2,
-        tag: '2',
+        tag: 'hemorrhage_control_trainers',
+        href: '/products',
     },
     {
         title: messages.filter3,
-        tag: '3',
+        tag: 'trauma_simulation_sylicone',
+        href: '/products',
     },
-    {
-        title: messages.filter4,
-        tag: '4',
-    },
-    {
-        title: messages.filter5,
-        tag: '5',
-    },
-    {
-        title: messages.filter6,
-        tag: '6',
-    },
-    
+    { title: messages.filter4, tag: 'task_trainers', href: '/products' },
+    { title: messages.filter5, tag: 'accessories', href: '/products' },
+    { title: messages.filter6, tag: 'individual_offers', href: '/products' },
 ];

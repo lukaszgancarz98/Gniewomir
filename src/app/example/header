@@ -1,6 +1,6 @@
 <Header
     title={title}
-    image="/logo.jpg"
+    image="/placeholder.png"
     enableLangage
     menu={[
         { key: 'home', label: 'home' },

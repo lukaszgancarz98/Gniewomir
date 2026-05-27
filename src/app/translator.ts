@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { useLanguage } from './hooks/languageContext';
 import parse from 'html-react-parser';
 
@@ -15,23 +16,16 @@ export type Values = Record<string, string | number>;
 export default function translator(
     message: MessageObject,
     values?: Values,
-): string | React.JSX.Element | React.JSX.Element[] {
+): string | React.JSX.Element | React.JSX.Element[] | null {
     const { language: lang } = useLanguage();
-    const browserLang = lang || navigator.language;
-    let language: string = 'defaultMessage';
-    let translation: string;
-    if (browserLang.includes('pl')) {
-        language = 'pl';
-    } else if (browserLang.includes('en')) {
-        language = 'en';
-    }
 
-    if (language) {
-        translation =
-            message[language as keyof MessageObject] || message.defaultMessage;
-    } else {
-        translation = message.defaultMessage;
-    }
+    const browserLang = lang || navigator.language;
+    let language: keyof MessageObject = 'defaultMessage';
+
+    if (browserLang.includes('pl')) language = 'pl';
+    else if (browserLang.includes('en')) language = 'en';
+
+    let translation = message[language] || message.defaultMessage;
 
     if (translation && values) {
         translation = translation.replace(/\$\{([^}]+)\}/g, (match, key) => {
