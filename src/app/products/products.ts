@@ -359,7 +359,7 @@ export const products: Product[] = [
             },
         ],
         price: 1800,
-        images: ['placeholder.png'],
+        images: ['wp3x_1.jpg'],
         pricePrefix: true,
     },
     {
@@ -423,7 +423,7 @@ export const products: Product[] = [
             },
         ],
         price: 1750,
-        images: ['wp3x_1.jpg'],
+        images: ['cewnik_1.jpg'],
         pricePrefix: true,
     },
     {
@@ -1230,7 +1230,6 @@ export const products: Product[] = [
             en: 'A trainer depicting the lower limb, intended for training in controlling massive hemorrhage and practicing wound packing procedures. The model is equipped with a simulated bleeding system with independent supply to each wound, allowing control of hemorrhage intensity.',
         },
         price: 15000,
-        images: ['placeholder.png'],
         simulatedDamage: [
             {
                 title: {
@@ -1285,6 +1284,7 @@ export const products: Product[] = [
             pl: '<strong>Zmiana rozkładu lub charakteru obrażeń:</strong> dopłata 750 PLN',
             en: '<strong>Change of distribution or nature of injuries:</strong> additional 750 PLN',
         },
+        images: ['noga1.jpg', 'noga2.jpg', 'noga3.jpg', 'noga4.jpg', 'noga5.jpg'],
     },
     {
         id: 'intraosseous_Access_Trainer_EZ_IO',
@@ -1297,59 +1297,48 @@ export const products: Product[] = [
         },
         description: {
             id: 'product.intraosseous_Access_Trainer_EZ_IO.description',
-            defaultMessage:
-                'A set of two trainers – tibia and humerus – made using 3D printing technology. The model is intended for repeated and realistic training in obtaining intraosseous access using the EZ-IO set. The bones reproduce real anatomical structures – they were created based on 3D scans, which preserves their full geometry and anatomical accuracy. The material used allows filling in defects resulting from intensive use.',
-            pl: 'Zestaw dwóch trenażerów - kość piszczelowa oraz kość ramienna - wykonanych w technologii druku 3D Model przeznaczony jest do wielokrotnego i realistycznego treningu uzyskiwania dostępu doszpikowego za pomocą zestawu <strong>EZ-IO</strong>. Kości stanowią odwzorowanie rzeczywistych struktur anatomicznych - powstały na bazie skanów 3D, co pozwala zachować ich pełną geometrię i wierność anatomiczną. Materiał, z którego wykonano modele, umożliwia uzupełnianie ubytków powstałych w wyniku intensywnego użytkowania.',
-            en: 'A set of two trainers – tibia and humerus – made using 3D printing technology. The model is intended for repeated and realistic training in obtaining intraosseous access using the <strong>EZ-IO</strong> set. The bones reproduce real anatomical structures – they were created based on 3D scans, which preserves their full geometry and anatomical accuracy. The material used allows filling in defects resulting from intensive use.',
+            defaultMessage: 'Set of two trainers - tibia and humerus - made using 3D printing technology. The model is designed for repeated training in obtaining intraosseous access using the EZ-IO set. The bones are a representation of real anatomical structures - they were created based on 3D scans, which allows them to maintain their full geometry and anatomical fidelity. The surfaces of the bones intended for punctures are interchangeable. After they are worn out, it is possible to replace just the surface without having to replace the entire trainer. The replaceable components can also be restored by filling holes formed as a result of intensive use. The trainers are designed to accommodate a standard 20 ml syringe, which allows for simulation of blood/bone marrow aspiration.',
+            pl: 'Zestaw dwóch trenażerów - kość piszczelowa oraz kość ramienna - wykonanych w technologii druku 3D. Model przeznaczony jest do wielokrotnego treningu uzyskiwania dostępu doszpikowego za pomocą zestawu EZ-IO. Kości stanowią odwzorowanie rzeczywistych struktur anatomicznych - powstały na bazie skanów 3D, co pozwala zachować ich pełną geometrię i wierność anatomiczną. Powierzchnie kości przeznaczone do wykonywania wkłuć są wymienne. Po ich zużyciu możliwa jest wymiana samej powierzchni, bez konieczności wymiany całego trenażera. Wymienne elementy mogą być również uzupełniane po powstaniu ubytków wynikających z intensywnego użytkowania. Trenażery są przystosowane do umieszczenia standardowej strzykawki o pojemności 20 ml, która umożliwia symulację aspiracji krwi/szpiku kostnego.',
+            en: 'Set of two trainers - tibia and humerus - made using 3D printing technology. The model is designed for repeated training in obtaining intraosseous access using the EZ-IO set. The bones are a representation of real anatomical structures - they were created based on 3D scans, which allows them to maintain their full geometry and anatomical fidelity. The surfaces of the bones intended for punctures are interchangeable. After they are worn out, it is possible to replace just the surface without having to replace the entire trainer. The replaceable components can also be restored by filling holes formed as a result of intensive use. The trainers are designed to accommodate a standard 20 ml syringe, which allows for simulation of blood/bone marrow aspiration.',
         },
-        price: 1700,
-        images: ['placeholder.png'],
-        simulatedDamage: [
-            {
-                title: {
-                    id: 'product.intraosseous_Access_Trainer_EZ_IO.simulatedDamage.0.title',
-                    defaultMessage:
-                        'Amputation below the knee (at mid-calf level)',
-                    pl: 'amputacja poniżej kolana (na wysokości połowy łydki)',
-                    en: 'Amputation below the knee (at mid-calf level)',
-                },
-            },
-            {
-                title: {
-                    id: 'product.intraosseous_Access_Trainer_EZ_IO.simulatedDamage.1.title',
-                    defaultMessage: 'Gunshot / shrapnel wound above the knee',
-                    pl: 'rana postrzałowa / odłamkowa powyżej kolana',
-                    en: 'Gunshot / shrapnel wound above the knee',
-                },
-            },
-        ],
+        price: 2500,
+        images: ['IOHUMERUS1.jpg', 'IOHUMERUSBONE.jpg', 'IOHUMERUSNTIBIA.jpg', 'IOTibia1.jpg'],
         trainingOptions: [
             {
                 title: {
                     id: 'product.intraosseous_Access_Trainer_EZ_IO.trainingOptions.0.title',
                     defaultMessage:
-                        'Application of a tourniquet on the lower limb',
-                    pl: 'aplikacja opaski uciskowej na kończynę dolną',
-                    en: 'Application of a tourniquet on the lower limb',
+                        '1x intraosseous access trainer EZ-IO - proximal humerus',
+                    pl: '1x trenażer uzyskiwania dostępu doszpikowego EZ-IO - kość ramienna',
+                    en: '1x intraosseous access trainer EZ-IO - proximal humerus',
                 },
             },
             {
                 title: {
                     id: 'product.intraosseous_Access_Trainer_EZ_IO.trainingOptions.1.title',
-                    defaultMessage: 'Performing wound packing procedure',
-                    pl: 'wykonanie procedury wound packing',
-                    en: 'Performing wound packing procedure',
+                    defaultMessage: '1x intraosseous access trainer EZ-IO - proximal tibia',
+                    pl: '1x trenażer uzyskiwania dostępu doszpikowego EZ-IO - kość piszczelowa',
+                    en: '1x intraosseous access trainer EZ-IO - proximal tibia',
                 },
             },
             {
                 title: {
                     id: 'product.intraosseous_Access_Trainer_EZ_IO.trainingOptions.2.title',
                     defaultMessage:
-                        'Practicing tourniquet conversion or approximation',
-                    pl: 'ćwiczenie konwersji lub aproksymacji opaski uciskowej',
-                    en: 'Practicing tourniquet conversion or approximation',
+                        '3x interchangeable puncture surface - proximal humerus',
+                    pl: '3x wymienna powierzchnia wkłucia - kość ramienna ',
+                    en: '3x interchangeable puncture surface - proximal humerus',
                 },
             },
+            {
+                title: {
+                    id: 'product.intraosseous_Access_Trainer_EZ_IO.trainingOptions.3.title',
+                    defaultMessage:
+                        '3x interchangeable puncture surface - proximal tibia',
+                    pl: '3x wymienna powierzchnia wkłucia - kość piszczelowa ',
+                    en: '3x interchangeable puncture surface - proximal tibia',
+                },
+            }
         ],
         priceExtension: {
             id: 'product.intraosseous_Access_Trainer_EZ_IO.priceExtension',
