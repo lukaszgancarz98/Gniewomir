@@ -59,11 +59,10 @@ export default function Header({
 
     return (
         <div className="relative z-10">
-            <div className="fixed flex top-0 left-0 w-full justify-center h-40 bg-[oklch(0.79_0.02_343.73)] items-center text-black z-50">
-                {menu ? (
-                    <div className="flex flex-col gap-8 w-[50%]">
-                        <div className="text-center text-5xl">{title}</div>
-                        <div className="flex flex-row gap-5 text-3xl justify-evenly my-2">
+            <div className="fixed top-0 left-0 w-full justify-start h-40 items-center text-black z-50 bg-white">
+                {menu && (
+                    <div className="flex flex-row justify-start gap-8 w-[50%] w-full pl-10">
+                        <div className="flex flex-row gap-10 text-3xl justify-evenly my-2">
                             {menu.map((item) =>
                                 item.usePopover ? (
                                     <div
@@ -73,10 +72,9 @@ export default function Header({
                                         <div>{translator(item.label)}</div>
                                         <div
                                             className="
-                                                absolute left-1/2 top-full
-                                                -translate-x-1/2 w-[500px] p-7
+                                                absolute left-0 top-full w-[500px] p-7
                                                 bg-white shadow-lg rounded
-                                                opacity-0 invisible
+                                                opacity-0 invisible z-100
                                                 group-hover:opacity-100 group-hover:visible
                                                 transition-all duration-200"
                                         >
@@ -124,17 +122,26 @@ export default function Header({
                             )}
                         </div>
                     </div>
-                ) : (
-                    <div className="text-center text-7xl">{title}</div>
                 )}
-                {image && (
+                {image && menu && (
                     <Link
                         href="/"
-                        className="absolute top-5 left-5 h-28 w-28 z-50"
+                        className="absolute top-1/3 left-5 h-28 w-28 z-50"
                     >
                         <Image src={image} alt={'Logo'} fill />
                     </Link>
                 )}
+                {image && !menu && (
+                    <Link
+                        href="/"
+                        className="absolute top-1/5 left-5 h-28 w-28 z-50"
+                    >
+                        <Image src={image} alt={'Logo'} fill />
+                    </Link>
+                )}
+                <Link href="/" className="absolute top-1/3 w-full text-center text-7xl">
+                    {title}
+                </Link>
                 {enableLangage && (
                     <div className="absolute top-3 right-3 z-50 h-[30px] w-[30px]">
                         <Dropdown
@@ -153,7 +160,7 @@ export default function Header({
                 )}
             </div>
             <div
-                className={`text-black min-h-screen pt-40 h-auto ${childClassName}`}
+                className={`text-black min-h-screen pt-40 h-auto ${childClassName} bg-[oklch(0.79_0.02_343.73)]`}
             >
                 {children}
             </div>

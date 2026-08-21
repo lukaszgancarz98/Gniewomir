@@ -9,7 +9,7 @@ export default function page() {
     return (
         <Header
             title={translator(commonMessages.brandName)}
-            image="/placeholder.png"
+            image="/logo-v3.png"
             enableLangage
             menu={[
                 {

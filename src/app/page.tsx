@@ -12,7 +12,7 @@ export default function Home() {
     return (
         <Header
             title={translator(messages.brandName)}
-            image="/placeholder.png"
+            image="/logo-v3.png"
             enableLangage
             menu={[
                 {

@@ -14,7 +14,7 @@ export default function MainPageProducts({ products }: MainPageProductsProps) {
                         <Link
                             key={product.id}
                             href={`/product/${product.id}`}
-                            className="relative border border-gray-300 p-4 m-2 w-[20%] min-w-[250px] border-radius group"
+                            className="relative border border-gray-300 p-4 m-2 w-[20%] min-w-[250px] border-radius group bg-white"
                         >
                             <div className="relative flex justify-center mt-4 group-hover:opacity-30 transition-all duration-300">
                                 <img
@@ -23,7 +23,7 @@ export default function MainPageProducts({ products }: MainPageProductsProps) {
                                     className="w-[250px] h-[250px] object-scale-down"
                                 />
                             </div>
-                            <h2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-2xl font-bold text-center p-5 unvisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-400">
+                            <h2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-2xl font-bold p-5 unvisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-400">
                                 {translator(product.name)}
                             </h2>
                             <h2 className="pt-3 text-xl font-bold text-center visible line-clamp-1 group-hover:opacity-0 group-hover:invisible transition-all duration-250">

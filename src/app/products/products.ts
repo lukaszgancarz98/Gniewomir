@@ -56,15 +56,15 @@ export const products: Product[] = [
                     {
                         id: 'product.wp2.setContents.0.items.0',
                         defaultMessage: 'Gunshot wound with a regular shape',
-                        pl: 'Rana postrzałowa o regularnym kształcie',
-                        en: 'Gunshot wound with a regular shape',
+                        pl: 'rana postrzałowa o regularnym kształcie',
+                        en: 'gunshot wound with a regular shape',
                     },
                     {
                         id: 'product.wp2.setContents.0.items.1',
                         defaultMessage:
-                            'Gunshot/shrapnel wound with an irregular shape',
-                        pl: 'Rana postrzałowa/odłamkowa o nieregularnym kształcie',
-                        en: 'Gunshot/shrapnel wound with an irregular shape',
+                            'gunshot/shrapnel wound with an irregular shape',
+                        pl: 'rana postrzałowa/odłamkowa o nieregularnym kształcie',
+                        en: 'gunshot/shrapnel wound with an irregular shape',
                     },
                 ],
             },
@@ -72,49 +72,49 @@ export const products: Product[] = [
                 title: {
                     id: 'product.wp2.setContents.1.title',
                     defaultMessage:
-                        'Pump with pressure gauge (1.5 L, scaled in mmHg)',
-                    pl: 'Pompa z manometrem (1,5 L, wyskalowany w mmHg)',
-                    en: 'Pump with pressure gauge (1.5 L, scaled in mmHg)',
+                        'pump with pressure gauge (1.5 L, scaled in mmHg)',
+                    pl: 'pompa z manometrem (1,5 L, wyskalowany w mmHg)',
+                    en: 'pump with pressure gauge (1.5 L, scaled in mmHg)',
                 },
             },
             {
                 title: {
                     id: 'product.wp2.setContents.2.title',
                     defaultMessage: 'Tubing',
-                    pl: 'Okablowanie',
-                    en: 'Tubing',
+                    pl: 'okablowanie',
+                    en: 'tubing',
                 },
             },
             {
                 title: {
                     id: 'product.wp2.setContents.3.title',
                     defaultMessage: 'Splitter',
-                    pl: 'Dwójnik',
-                    en: 'Splitter',
+                    pl: 'dwójnik',
+                    en: 'splitter',
                 },
             },
             {
                 title: {
                     id: 'product.wp2.setContents.4.title',
                     defaultMessage: 'Pump seal maintenance oil',
-                    pl: 'Olejek do konserwacji uszczelek pompy',
-                    en: 'Pump seal maintenance oil',
+                    pl: 'olejek do konserwacji uszczelek pompy',
+                    en: 'pump seal maintenance oil',
                 },
             },
             {
                 title: {
                     id: 'product.wp2.setContents.5.title',
                     defaultMessage: 'User manual (paper or electronic)',
-                    pl: 'Instrukcja obsługi (papierowa lub elektroniczna)',
-                    en: 'User manual (paper or electronic)',
+                    pl: 'instrukcja obsługi (papierowa lub elektroniczna)',
+                    en: 'user manual (paper or electronic)',
                 },
             },
             {
                 title: {
                     id: 'product.wp2.setContents.6.title',
                     defaultMessage: 'Pump manufacturer manual',
-                    pl: 'Instrukcja producenta pompy',
-                    en: 'Pump manufacturer manual',
+                    pl: 'instrukcja producenta pompy',
+                    en: 'pump manufacturer manual',
                 },
             },
         ],
@@ -122,16 +122,16 @@ export const products: Product[] = [
             {
                 id: 'product.wp2.modificationOptions.0',
                 defaultMessage:
-                    'Custom wound shape within a 16x12x5 cm block: +300 PLN',
-                pl: 'Wykonanie rany o indywidualnym kształcie w obrębie bloku 16x12x5 cm: +300 PLN',
-                en: 'Custom wound shape within a 16x12x5 cm block: +300 PLN',
+                    'custom wound shape within a 16x12x5 cm block: +300 PLN',
+                pl: 'wykonanie rany o indywidualnym kształcie w obrębie bloku 16x12x5 cm: +300 PLN',
+                en: 'custom wound shape within a 16x12x5 cm block: +300 PLN',
             },
             {
                 id: 'product.wp2.modificationOptions.1',
                 defaultMessage:
-                    'Alternative vessel placement (side wall of the wound): +100 PLN',
-                pl: 'Alternatywne położenie naczynia zasilającego (boczna ściana rany): +100 PLN',
-                en: 'Alternative vessel placement (side wall of the wound): +100 PLN',
+                    'alternative vessel placement (side wall of the wound): +100 PLN',
+                pl: 'alternatywne położenie naczynia zasilającego (boczna ściana rany): +100 PLN',
+                en: 'alternative vessel placement (side wall of the wound): +100 PLN',
             },
         ],
         price: 3000,
@@ -152,57 +152,51 @@ export const products: Product[] = [
         shortDescription: {
             id: 'product.massive_bleeding_catheter.shortDescription',
             defaultMessage:
-                'A trainer in the form of an elongated block with a large laceration and a severed vessel, enabling training in controlling massive hemorrhage using a catheter. Made of durable silicone with high similarity to human tissue. A valve at the end of the line allows independent training when a second trainer is connected. Fully compatible with the universal pump and 4 mm tubing system used in all trainers.',
-            pl: 'Trenażer w formie przedłużonego bloku z dużą raną szarpaną i przerwanym naczyniem, umożliwiający trening tamowania masywnego krwotoku przy użyciu cewnika. Wykonany z wytrzymałego silikonu o wysokim podobieństwie do ludzkich tkanek. Zawór na końcu przewodu pozwala na niezależny trening po podłączeniu drugiego trenażera. W pełni kompatybilny z uniwersalnym systemem pomp i przewodów (średnica 4 mm) stosowanym we wszystkich trenażerach.',
-            en: 'A trainer in the form of an elongated block with a large laceration and a severed vessel, enabling training in controlling massive hemorrhage using a catheter. Made of durable silicone with high similarity to human tissue. A valve at the end of the line allows independent training when a second trainer is connected. Fully compatible with the universal pump and 4 mm tubing system used in all trainers.',
+                'A trainer in the form of an elongated block with a large laceration and a severed vessel, enabling training in controlling massive hemorrhage using a Foley catheter. Made of durable silicone with high similarity to human tissue. A valve at the end of the line allows independent training when a second trainer is connected. Fully compatible with the universal pump and 4 mm tubing system used in all trainers.',
+            pl: 'Trenażer w formie przedłużonego bloku z dużą raną szarpaną i przerwanym naczyniem, umożliwiający trening tamowania masywnego krwotoku przy użyciu cewnika Foleya. Wykonany z wytrzymałego silikonu o wysokim podobieństwie do ludzkich tkanek. Zawór na końcu przewodu pozwala na niezależny trening po podłączeniu drugiego trenażera. W pełni kompatybilny z uniwersalnym systemem pomp i przewodów (średnica 4 mm) stosowanym we wszystkich trenażerach.',
+            en: 'A trainer in the form of an elongated block with a large laceration and a severed vessel, enabling training in controlling massive hemorrhage using a Foley catheter. Made of durable silicone with high similarity to human tissue. A valve at the end of the line allows independent training when a second trainer is connected. Fully compatible with the universal pump and 4 mm tubing system used in all trainers.',
         },
         description: {
             id: 'product.massive_bleeding_catheter.description',
             defaultMessage:
-                'A trainer in the form of an elongated block with a large laceration and a severed vessel, enabling training in controlling massive hemorrhage using a catheter. Made of durable silicone with high similarity to human tissue. A valve at the end of the line allows independent training when a second trainer is connected. Fully compatible with the universal pump and 4 mm tubing system used in all trainers.',
-            pl: 'Trenażer w formie przedłużonego bloku z dużą raną szarpaną i przerwanym naczyniem, umożliwiający trening tamowania masywnego krwotoku przy użyciu cewnika. Wykonany z wytrzymałego silikonu o wysokim podobieństwie do ludzkich tkanek. Zawór na końcu przewodu pozwala na niezależny trening po podłączeniu drugiego trenażera. W pełni kompatybilny z uniwersalnym systemem pomp i przewodów (średnica 4 mm) stosowanym we wszystkich trenażerach.',
-            en: 'A trainer in the form of an elongated block with a large laceration and a severed vessel, enabling training in controlling massive hemorrhage using a catheter. Made of durable silicone with high similarity to human tissue. A valve at the end of the line allows independent training when a second trainer is connected. Fully compatible with the universal pump and 4 mm tubing system used in all trainers.',
+                'A trainer in the form of an elongated block with a large laceration and a severed vessel, enabling training in controlling massive hemorrhage using a Foley catheter. Made of durable silicone with high similarity to human tissue. A valve at the end of the line allows independent training when a second trainer is connected. Fully compatible with the universal pump and 4 mm tubing system used in all trainers.',
+            pl: 'Trenażer w formie przedłużonego bloku z dużą raną szarpaną i przerwanym naczyniem, umożliwiający trening tamowania masywnego krwotoku przy użyciu cewnika Foleya. Wykonany z wytrzymałego silikonu o wysokim podobieństwie do ludzkich tkanek. Zawór na końcu przewodu pozwala na niezależny trening po podłączeniu drugiego trenażera. W pełni kompatybilny z uniwersalnym systemem pomp i przewodów (średnica 4 mm) stosowanym we wszystkich trenażerach.',
+            en: 'A trainer in the form of an elongated block with a large laceration and a severed vessel, enabling training in controlling massive hemorrhage using a Foley catheter. Made of durable silicone with high similarity to human tissue. A valve at the end of the line allows independent training when a second trainer is connected. Fully compatible with the universal pump and 4 mm tubing system used in all trainers.',
         },
         setContents: [
             {
                 title: {
                     id: 'product.massive_bleeding_catheter.setContents.0.title',
                     defaultMessage:
-                        'Silicone trainer in the form of an elongated block with a large laceration',
-                    pl: 'Trenażer silikonowy w formie przedłużonego bloku z dużą raną szarpaną',
-                    en: 'Silicone trainer in the form of an elongated block with a large laceration',
+                        'silicone trainer in the form of an elongated block with a large laceration',
+                    pl: 'trenażer silikonowy w formie przedłużonego bloku z dużą raną szarpaną',
+                    en: 'silicone trainer in the form of an elongated block with a large laceration',
                 },
             },
             {
                 title: {
                     id: 'product.massive_bleeding_catheter.setContents.1.title',
                     defaultMessage:
-                        'Large severed vessel allowing catheter insertion',
-                    pl: 'Duże przerwane naczynie umożliwiające wprowadzenie cewnika',
-                    en: 'Large severed vessel allowing catheter insertion',
+                        'large severed vessel allowing catheter insertion',
+                    pl: 'duże przerwane naczynie umożliwiające wprowadzenie cewnika',
+                    en: 'large severed vessel allowing catheter insertion',
                 },
             },
             {
                 title: {
                     id: 'product.massive_bleeding_catheter.setContents.2.title',
                     defaultMessage: 'Standard 4 mm connector',
-                    pl: 'Standardowe przyłącze 4 mm',
-                    en: 'Standard 4 mm connector',
+                    pl: 'standardowe przyłącze 4 mm',
+                    en: 'standard 4 mm connector',
                 },
             },
         ],
         modificationOptions: [
             {
                 id: 'product.massive_bleeding_catheter.modificationOptions.0',
-                defaultMessage: 'Custom wound shape: +300 PLN',
-                pl: 'Indywidualny kształt rany: +300 PLN',
-                en: 'Custom wound shape: +300 PLN',
-            },
-            {
-                id: 'product.massive_bleeding_catheter.modificationOptions.1',
-                defaultMessage: 'Alternative vessel placement: +100 PLN',
-                pl: 'Alternatywne ułożenie naczynia: +100 PLN',
-                en: 'Alternative vessel placement: +100 PLN',
+                defaultMessage: 'custom wound shape: +300 PLN',
+                pl: 'indywidualny kształt rany: +300 PLN',
+                en: 'custom wound shape: +300 PLN',
             },
         ],
         price: 1800,
@@ -237,64 +231,58 @@ export const products: Product[] = [
             {
                 title: {
                     id: 'product.wp3it.setContents.0.title',
-                    defaultMessage: 'Silicone trainer with incised wound',
-                    pl: 'Trenażer silikonowy z raną ciętą',
-                    en: 'Silicone trainer with incised wound',
+                    defaultMessage: 'silicone trainer with incised wound',
+                    pl: 'trenażer silikonowy z raną ciętą',
+                    en: 'silicone trainer with incised wound',
                 },
             },
             {
                 title: {
                     id: 'product.wp3it.setContents.1.title',
-                    defaultMessage: 'Pump with pressure gauge (1.5 L)',
-                    pl: 'Pompa z manometrem (1,5 L)',
-                    en: 'Pump with pressure gauge (1.5 L)',
+                    defaultMessage: 'pump with pressure gauge (1.5 L)',
+                    pl: 'pompa z manometrem (1,5 L)',
+                    en: 'pump with pressure gauge (1.5 L)',
                 },
             },
             {
                 title: {
                     id: 'product.wp3it.setContents.2.title',
-                    defaultMessage: 'Tubing and splitter',
-                    pl: 'Okablowanie i dwójnik',
-                    en: 'Tubing and splitter',
+                    defaultMessage: 'tubing and splitter',
+                    pl: 'okablowanie i dwójnik',
+                    en: 'tubing and splitter',
                 },
             },
             {
                 title: {
                     id: 'product.wp3it.setContents.3.title',
-                    defaultMessage: 'Seal maintenance oil',
-                    pl: 'Olejek do konserwacji uszczelek',
-                    en: 'Seal maintenance oil',
+                    defaultMessage: 'seal maintenance oil',
+                    pl: 'olejek do konserwacji uszczelek',
+                    en: 'seal maintenance oil',
                 },
             },
             {
                 title: {
                     id: 'product.wp3it.setContents.4.title',
-                    defaultMessage: 'User manual (paper or electronic)',
-                    pl: 'Instrukcja obsługi (papierowa lub elektroniczna)',
-                    en: 'User manual (paper or electronic)',
+                    defaultMessage: 'user manual (paper or electronic)',
+                    pl: 'instrukcja obsługi (papierowa lub elektroniczna)',
+                    en: 'user manual (paper or electronic)',
                 },
             },
             {
                 title: {
                     id: 'product.wp3it.setContents.5.title',
-                    defaultMessage: 'Pump manufacturer manual',
-                    pl: 'Instrukcja producenta pompy',
-                    en: 'Pump manufacturer manual',
+                    defaultMessage: 'pump manufacturer manual',
+                    pl: 'instrukcja producenta pompy',
+                    en: 'pump manufacturer manual',
                 },
             },
         ],
         modificationOptions: [
             {
                 id: 'product.wp3it.modificationOptions.0',
-                defaultMessage: 'Non-standard wound shape: +300 PLN',
-                pl: 'Rana o niestandardowym kształcie: +300 PLN',
-                en: 'Non-standard wound shape: +300 PLN',
-            },
-            {
-                id: 'product.wp3it.modificationOptions.1',
-                defaultMessage: 'Alternative vessel placement: +100 PLN',
-                pl: 'Alternatywne ułożenie naczynia: +100 PLN',
-                en: 'Alternative vessel placement: +100 PLN',
+                defaultMessage: 'non-standard wound shape: +300 PLN',
+                pl: 'rana o niestandardowym kształcie: +300 PLN',
+                en: 'non-standard wound shape: +300 PLN',
             },
         ],
         price: 2200,
@@ -330,32 +318,26 @@ export const products: Product[] = [
                 title: {
                     id: 'product.wp3x.setContents.0.title',
                     defaultMessage:
-                        'Silicone trainer with a deep, narrow wound',
-                    pl: 'Trenażer silikonowy z głęboką, wąską raną',
-                    en: 'Silicone trainer with a deep, narrow wound',
+                        'silicone trainer with a deep, narrow wound',
+                    pl: 'trenażer silikonowy z głęboką, wąską raną',
+                    en: 'silicone trainer with a deep, narrow wound',
                 },
             },
             {
                 title: {
                     id: 'product.wp3x.setContents.1.title',
-                    defaultMessage: 'Standard 4 mm connector',
-                    pl: 'Standardowe przyłącze 4 mm',
-                    en: 'Standard 4 mm connector',
+                    defaultMessage: 'standard 4 mm connector',
+                    pl: 'standardowe przyłącze 4 mm',
+                    en: 'standard 4 mm connector',
                 },
             },
         ],
         modificationOptions: [
             {
                 id: 'product.wp3x.modificationOptions.0',
-                defaultMessage: 'Custom wound shape: +300 PLN',
-                pl: 'Indywidualny kształt rany: +300 PLN',
-                en: 'Custom wound shape: +300 PLN',
-            },
-            {
-                id: 'product.wp3x.modificationOptions.1',
-                defaultMessage: 'Change of vessel position: +100 PLN',
-                pl: 'Zmiana położenia naczynia: +100 PLN',
-                en: 'Change of vessel position: +100 PLN',
+                defaultMessage: 'custom wound shape: +300 PLN',
+                pl: 'indywidualny kształt rany: +300 PLN',
+                en: 'custom wound shape: +300 PLN',
             },
         ],
         price: 1800,
@@ -391,39 +373,59 @@ export const products: Product[] = [
                 title: {
                     id: 'product.trainer_large_wound.setContents.0.title',
                     defaultMessage:
-                        'Silicone trainer with a large, massively bleeding wound',
-                    pl: 'Trenażer silikonowy z dużą, masywnie krwawiącą raną',
-                    en: 'Silicone trainer with a large, massively bleeding wound',
+                        'silicone trainer with a large, massively bleeding wound',
+                    pl: 'trenażer silikonowy z dużą, masywnie krwawiącą raną',
+                    en: 'silicone trainer with a large, massively bleeding wound',
                 },
             },
             {
                 title: {
                     id: 'product.trainer_large_wound.setContents.1.title',
                     defaultMessage:
-                        'Modified vessel layout (straight-line supply, vessel on the side wall)',
-                    pl: 'Zmieniony układ położenia naczynia (zasilanie w linii prostej, naczynie na bocznej ścianie)',
-                    en: 'Modified vessel layout (straight-line supply, vessel on the side wall)',
+                        'modified vessel layout (straight-line supply, vessel on the side wall)',
+                    pl: 'zmieniony układ położenia naczynia (zasilanie w linii prostej, naczynie na bocznej ścianie)',
+                    en: 'modified vessel layout (straight-line supply, vessel on the side wall)',
                 },
             },
             {
                 title: {
                     id: 'product.trainer_large_wound.setContents.2.title',
-                    defaultMessage: 'Standard 4 mm connector',
-                    pl: 'Standardowe przyłącze 4 mm',
-                    en: 'Standard 4 mm connector',
+                    defaultMessage: 'standard 4 mm connector',
+                    pl: 'standardowe przyłącze 4 mm',
+                    en: 'standard 4 mm connector',
                 },
             },
         ],
         modificationOptions: [
             {
                 id: 'product.trainer_large_wound.modificationOptions.0',
-                defaultMessage: 'Custom wound shape: +300 PLN',
-                pl: 'Indywidualny kształt rany: +300 PLN',
-                en: 'Custom wound shape: +300 PLN',
+                defaultMessage: 'custom wound shape: +300 PLN',
+                pl: 'indywidualny kształt rany: +300 PLN',
+                en: 'custom wound shape: +300 PLN',
             },
         ],
         price: 1750,
         images: ['cewnik_1.jpg'],
+        pricePrefix: true,
+    },
+    {
+        id: 'mesenteric_bleeding_trainer',
+        tag: 'hemorrhage_control_trainers',
+        name: {
+            id: 'product.mesenteric_bleeding_trainer.name',
+            defaultMessage: 'Mesenteric Bleeding Trainer',
+            pl: 'Trenażer tamowania krwotoku z krezki jelitowej',
+            en: 'Mesenteric Bleeding Trainer',
+        },
+        description: {
+            id: 'product.mesenteric_bleeding_trainer.description',
+            defaultMessage:
+                'Trainer in the form of an exenteration, made of silicone with a high degree of realism. Designed for training in controlling hemorrhage from mesenteric vessels. The construction allows the trainer to be attached to a simulated person using a specialized adhesive for silicone elements. The trainer is equipped with two blood vessels attached to the mesentery, with the option to choose which one will be the source of simulated bleeding. Enables training in applying hemostatic clamps and ligating bleeding vessels. Fully compatible with the universal pump and tubing system (4 mm diameter) used in all trainers.',
+            pl: 'Trenażer w formie wytrzewienia, wykonany z silikonu o wysokim stopniu realizmu. Przeznaczony do treningu tamowania krwotoków z naczyń krezki jelitowej. Konstrukcja umożliwia przyklejenie trenażera do osoby pozorowanej za pomocą specjalistycznego kleju do elementów silikonowych. Trenażer wyposażony jest w dwa naczynia krwionośne przytwierdzone do krezki jelitowej, z możliwością wyboru, które z nich będzie źródłem symulowanego krwotoku. Umożliwia trening zakładania kleszczy hemostatycznych oraz podwiązywania krwawiących naczyń. W pełni kompatybilny z uniwersalnym systemem pomp i przewodów (średnica 4 mm) stosowanym we wszystkich trenażerach.',
+            en: 'Trainer in the form of an exenteration, made of silicone with a high degree of realism. Designed for training in controlling hemorrhage from mesenteric vessels. The construction allows the trainer to be attached to a simulated person using a specialized adhesive for silicone elements. The trainer is equipped with two blood vessels attached to the mesentery, with the option to choose which one will be the source of simulated bleeding. Enables training in applying hemostatic clamps and ligating bleeding vessels. Fully compatible with the universal pump and tubing system (4 mm diameter) used in all trainers.',
+        },
+        price: 2500,
+        images: ['evis1.jpg', 'evis2.jpg'],
         pricePrefix: true,
     },
     {
@@ -447,7 +449,7 @@ export const products: Product[] = [
                 title: {
                     id: 'product.basic_set.setContents.0.title',
                     defaultMessage: '40 entry wounds (various calibers)',
-                    pl: '40 ran wlotowych (różne kalibry)',
+                    pl: '40 ran wlotowych (różnych kalibrów)',
                     en: '40 entry wounds (various calibers)',
                 },
             },
@@ -496,9 +498,9 @@ export const products: Product[] = [
                 title: {
                     id: 'product.basic_set.setContents.6.title',
                     defaultMessage:
-                        '3 upper limb amputations (training variant – quick application at the expense of appearance)',
-                    pl: '3 amputacje kończyny górnej (wariant treningowy - szybka aplikacja kosztem wyglądu)',
-                    en: '3 upper limb amputations (training variant – quick application at the expense of appearance)',
+                        '3 upper limb amputations (training variant)',
+                    pl: '3 amputacje kończyny górnej (wariant treningowy)',
+                    en: '3 upper limb amputations (training variant)',
                 },
             },
             {
@@ -549,18 +551,17 @@ export const products: Product[] = [
             {
                 title: {
                     id: 'product.basic_civil_set.setContents.0.title',
-                    defaultMessage:
-                        '5 small “flat” open fractures (size similar to a shrapnel wound with a small protruding bone fragment)',
-                    pl: '5 złamań otwartych małych „płaskich” (rozmiar zbliżony do rany odłamkowej z niewielkim\nfragmentem wystającej kości)',
-                    en: '5 small “flat” open fractures (size similar to a shrapnel wound with a small protruding bone fragment)',
+                    defaultMessage: '5 small open fractures',
+                    pl: '5 złamań otwartych małych',
+                    en: '5 small open fractures',
                 },
             },
             {
                 title: {
                     id: 'product.basic_civil_set.setContents.1.title',
-                    defaultMessage: '5 small open fractures',
-                    pl: '5 złamań otwartych małych',
-                    en: '5 small open fractures',
+                    defaultMessage: '5 medium open fractures',
+                    pl: '5 złamań otwartych średnich',
+                    en: '5 medium open fractures',
                 },
             },
             {
@@ -574,10 +575,9 @@ export const products: Product[] = [
             {
                 title: {
                     id: 'product.basic_civil_set.setContents.3.title',
-                    defaultMessage:
-                        '2 structural ankle joint fractures (large)',
-                    pl: '2 złamania strukturalne stawu skokowego (duże)',
-                    en: '2 structural ankle joint fractures (large)',
+                    defaultMessage: '2 structural ankle joint fractures',
+                    pl: '2 złamania strukturalne stawu skokowego',
+                    en: '2 structural ankle joint fractures',
                 },
             },
             {
@@ -658,9 +658,9 @@ export const products: Product[] = [
         tag: 'trauma_simulation_latex',
         name: {
             id: 'product.multitrauma_set.name',
-            defaultMessage: 'Multitrauma Set (TCCC)',
-            pl: 'Zestaw Multitrauma (TCCC)',
-            en: 'Multitrauma Set (TCCC)',
+            defaultMessage: 'Multitrauma Set',
+            pl: 'Zestaw Multitrauma',
+            en: 'Multitrauma Set',
         },
         description: {
             id: 'product.multitrauma_set.description',
@@ -674,7 +674,7 @@ export const products: Product[] = [
                 title: {
                     id: 'product.multitrauma_set.setContents.0.title',
                     defaultMessage: '50 entry wounds (various calibers)',
-                    pl: '50 ran wlotowych (różne kalibry)',
+                    pl: '50 ran wlotowych (różnych kalibrów)',
                     en: '50 entry wounds (various calibers)',
                 },
             },
@@ -745,15 +745,6 @@ export const products: Product[] = [
             },
             {
                 title: {
-                    id: 'product.multitrauma_set.setContents.9.title',
-                    defaultMessage:
-                        '2 nose pieces for facial trauma simulation',
-                    pl: '2 kawałki nosa do symulacji urazów twarzoczaszki',
-                    en: '2 nose pieces for facial trauma simulation',
-                },
-            },
-            {
-                title: {
                     id: 'product.multitrauma_set.setContents.10.title',
                     defaultMessage: '1 latex artificial skin (48 x 66 cm)',
                     pl: '1 sztuczna skóra lateksowa (48 x 66 cm)',
@@ -773,10 +764,9 @@ export const products: Product[] = [
         ],
         additionalInfo: {
             id: 'product.multitrauma_set.additionalInfo',
-            defaultMessage:
-                'All elements are made of latex (except for the nose pieces).',
-            pl: 'Wszystkie elementy wykonane z lateksu (z wyjątkiem kawałków nosa).',
-            en: 'All elements are made of latex (except for the nose pieces).',
+            defaultMessage: 'All elements are made of latex.',
+            pl: 'Wszystkie elementy wykonane z lateksu.',
+            en: 'All elements are made of latex.',
         },
     },
     {
@@ -814,7 +804,24 @@ export const products: Product[] = [
             },
         ],
         price: 750,
-        images: ['reka_1.jpg', 'reka_2.jpg', 'reka_3.jpg', 'palce_1.jpg'],
+        images: [
+            'dlon1.jpg',
+            'dlon2.jpg',
+            'dlon3.jpg',
+            'dlon4.jpg',
+            'dlon5.jpg',
+            'dlon6.jpg',
+            'palec1.jpg',
+            'palec2.jpg',
+            'palec3.jpg',
+            'palec4.jpg',
+            'palec5.jpg',
+            'palec6.jpg',
+            'reka_1.jpg',
+            'reka_2.jpg',
+            'reka_3.jpg',
+            'palce_1.jpg',
+        ],
     },
     {
         id: 'silicone_evisceration',
@@ -828,9 +835,9 @@ export const products: Product[] = [
         description: {
             id: 'product.silicone_evisceration.description',
             defaultMessage:
-                'A silicone cast depicting an abdominal injury with evisceration of organs. Made of high-quality silicone with a very high degree of realism. Used in tactical medicine and prehospital care training.',
-            pl: 'Odlew silikonowy przedstawiający uraz jamy brzusznej z wytrzewieniem narządów. Wykonany z wysokiej jakości silikonu o bardzo wysokim stopniu realizmu. Stosowany w ćwiczeniach z zakresu medycyny taktycznej i ratownictwa przedszpitalnego.',
-            en: 'A silicone cast depicting an abdominal injury with evisceration of organs. Made of high-quality silicone with a very high degree of realism. Used in tactical medicine and prehospital care training.',
+                'A silicone cast depicting an abdominal injury with evisceration of organs. Made of high-quality silicone with a very high degree of realism. Construction allows attaching the prosthetic to a simulated patient using a specialized silicone adhesive. Used in tactical medicine and prehospital care training.',
+            pl: 'Odlew silikonowy przedstawiający uraz jamy brzusznej z wytrzewieniem narządów. Wykonany z wysokiej jakości silikonu o bardzo wysokim stopniu realizmu. Konstrukcja umożliwia przyklejenie trenażera do osoby pozorowanej za pomocą specjalistycznego kleju do elementów silikonowych. Stosowany w ćwiczeniach z zakresu medycyny taktycznej i ratownictwa przedszpitalnego.',
+            en: 'A silicone cast depicting an abdominal injury with evisceration of organs. Made of high-quality silicone with a very high degree of realism. Construction allows attaching the prosthetic to a simulated patient using a specialized silicone adhesive. Used in tactical medicine and prehospital care training.',
         },
         price: 750,
         images: [
@@ -884,13 +891,25 @@ export const products: Product[] = [
         ],
         price: 1450,
         images: [
+            'stopa_2.jpg',
+            'stopa_1.jpg',
+            'stopa_3.jpg',
+            'dlon1.jpg',
+            'dlon2.jpg',
+            'dlon3.jpg',
+            'dlon4.jpg',
+            'dlon5.jpg',
+            'dlon6.jpg',
+            'palec1.jpg',
+            'palec2.jpg',
+            'palec3.jpg',
+            'palec4.jpg',
+            'palec5.jpg',
+            'palec6.jpg',
             'reka_1.jpg',
             'reka_2.jpg',
             'reka_3.jpg',
             'palce_1.jpg',
-            'stopa_1.jpg',
-            'stopa_2.jpg',
-            'stopa_3.jpg',
         ],
     },
     {
@@ -936,18 +955,18 @@ export const products: Product[] = [
                 title: {
                     id: 'product.silicone_forearm_with_selected_injuries.availableVariants.0.title',
                     defaultMessage:
-                        'Forearm with open fracture / laceration of the wrist and closed fracture of a finger.',
-                    pl: 'Przedramię z otwartym złamaniem / raną szarpaną nadgarstka i złamaniem zamkniętym palca.',
-                    en: 'Forearm with open fracture / laceration of the wrist and closed fracture of a finger.',
+                        'forearm with open fracture / laceration of the wrist and closed fracture of a finger',
+                    pl: 'przedramię z otwartym złamaniem / raną szarpaną nadgarstka i złamaniem zamkniętym palca',
+                    en: 'forearm with open fracture / laceration of the wrist and closed fracture of a finger',
                 },
             },
             {
                 title: {
                     id: 'product.silicone_forearm_with_selected_injuries.availableVariants.1.title',
                     defaultMessage:
-                        'Forearm with closed fracture of both forearm bones and several small lacerations.',
-                    pl: 'Przedramię ze złamaniem zamkniętym obu kości przedramienia i kilkoma niewielkimi ranami szarpanymi.',
-                    en: 'Forearm with closed fracture of both forearm bones and several small lacerations.',
+                        'forearm with closed fracture of both forearm bones and several small lacerations',
+                    pl: 'przedramię ze złamaniem zamkniętym obu kości przedramienia i kilkoma niewielkimi ranami szarpanymi',
+                    en: 'forearm with closed fracture of both forearm bones and several small lacerations',
                 },
             },
         ],
@@ -979,37 +998,6 @@ export const products: Product[] = [
         images: ['placeholder.png'],
     },
     {
-        id: 'silicone_wounds_possibility_of_attaching_simulated_hemorrhage',
-        tag: 'trauma_simulation_sylicone',
-        name: {
-            id: 'product.silicone_wounds_possibility_of_attaching_simulated_hemorrhage.name',
-            defaultMessage:
-                'Silicone Wounds with Option to Attach Simulated Hemorrhage (10 pcs.)',
-            pl: 'Silikonowe rany z możliwością podpięcia symulowanego krwotoku (10 szt.)',
-            en: 'Silicone Wounds with Option to Attach Simulated Hemorrhage (10 pcs.)',
-        },
-        description: {
-            id: 'product.silicone_wounds_possibility_of_attaching_simulated_hemorrhage.description',
-            defaultMessage:
-                'A set of silicone wounds with the option to connect a bleeding simulation system. Each wound has a connector for attaching a fluid supply line compatible with the pump used in wound packing trainers. Enables realistic training in controlling massive hemorrhage and managing penetrating wounds.',
-            pl: 'Zestaw silikonowych ran z możliwością podłączenia systemu symulującego krwotok. Każda rana posiada złącze umożliwiające podpięcie przewodu zasilanego cieczą, kompatybilnego z pompą stosowaną w trenażerach <strong>wound packing</strong>. Umożliwia realistyczne szkolenia z zakresu tamowania masywnych krwotoków i opatrywania ran penetrujących.',
-            en: 'A set of silicone wounds with the option to connect a bleeding simulation system. Each wound has a connector for attaching a fluid supply line compatible with the pump used in <strong>wound packing</strong> trainers. Enables realistic training in controlling massive hemorrhage and managing penetrating wounds.',
-        },
-        price: 1100,
-        images: ['placeholder.png'],
-        setContents: [
-            {
-                title: {
-                    id: 'product.silicone_wounds_possibility_of_attaching_simulated_hemorrhage.setContents.0.title',
-                    defaultMessage:
-                        '10 silicone wounds with the option to connect a bleeding system',
-                    pl: '10 silikonowych ran z możliwością podpięcia systemu krwotoku',
-                    en: '10 silicone wounds with the option to connect a bleeding system',
-                },
-            },
-        ],
-    },
-    {
         id: 'silicone_forearm_with_slowly_oozing_hemorrhage',
         tag: 'trauma_simulation_sylicone',
         name: {
@@ -1027,24 +1015,24 @@ export const products: Product[] = [
             en: 'A trainer depicting a forearm with an open fracture and laceration in the wrist area, as well as a closed fracture of a finger. Equipped with a simulated bleeding system – the instructor can adjust the intensity of the simulated blood flow using a pump. Enables practical training in hemorrhage control, fracture management, and limb injury care.',
         },
         price: 2400,
-        images: ['reka_1.jpg', 'reka_2.jpg', 'reka_3.jpg'],
+        images: ['przedramie_1.jpg', 'przedramie_2.jpg', 'przedramie_3.jpg'],
         availableVariants: [
             {
                 title: {
                     id: 'product.silicone_forearm_with_slowly_oozing_hemorrhage.availableVariants.0.title',
                     defaultMessage:
-                        'Forearm with open fracture / laceration of the wrist and closed fracture of a finger.',
-                    pl: 'Przedramię z otwartym złamaniem / raną szarpaną nadgarstka i złamaniem zamkniętym palca.',
-                    en: 'Forearm with open fracture / laceration of the wrist and closed fracture of a finger.',
+                        'forearm with open fracture / laceration of the wrist and closed fracture of a finger',
+                    pl: 'przedramię z otwartym złamaniem / raną szarpaną nadgarstka i złamaniem zamkniętym palca',
+                    en: 'forearm with open fracture / laceration of the wrist and closed fracture of a finger',
                 },
             },
             {
                 title: {
                     id: 'product.silicone_forearm_with_slowly_oozing_hemorrhage.availableVariants.1.title',
                     defaultMessage:
-                        'Forearm with closed fracture of both forearm bones and several small lacerations.',
-                    pl: 'Przedramię ze złamaniem zamkniętym obu kości przedramienia i kilkoma niewielkimi ranami szarpanymi.',
-                    en: 'Forearm with closed fracture of both forearm bones and several small lacerations.',
+                        'forearm with closed fracture of both forearm bones and several small lacerations',
+                    pl: 'przedramię ze złamaniem zamkniętym obu kości przedramienia i kilkoma niewielkimi ranami szarpanymi',
+                    en: 'forearm with closed fracture of both forearm bones and several small lacerations',
                 },
             },
         ],
@@ -1074,7 +1062,7 @@ export const products: Product[] = [
             en: 'An advanced trainer including a cast of the arm with shoulder, intended for learning and improving techniques of controlling massive hemorrhage in the upper limb. Equipped with an instructor-controlled bleeding system, it enables realistic simulation of injuries requiring immediate intervention.',
         },
         price: 10000,
-        images: ['placeholder.png'],
+        images: ['reka_bez_barku_1.jpg'],
         simulatedDamage: [
             {
                 title: {
@@ -1188,9 +1176,9 @@ export const products: Product[] = [
                 title: {
                     id: 'product.trainer_stopping_bleeding_bandage_and_wound_packing_arm_without_shoulder.trainingOptions.1.title',
                     defaultMessage:
-                        'Performing wound packing procedure with controlled bleeding',
-                    pl: 'wykonywanie procedury wound packing z regulowanym krwotokiem',
-                    en: 'Performing wound packing procedure with controlled bleeding',
+                        'Practicing wound packing procedure in a deep wound',
+                    pl: 'wykonywanie procedury wound packing w ranie głębokiej',
+                    en: 'Practicing wound packing procedure in a deep wound',
                 },
             },
             {
@@ -1284,7 +1272,13 @@ export const products: Product[] = [
             pl: '<strong>Zmiana rozkładu lub charakteru obrażeń:</strong> dopłata 750 PLN',
             en: '<strong>Change of distribution or nature of injuries:</strong> additional 750 PLN',
         },
-        images: ['noga1.jpg', 'noga2.jpg', 'noga3.jpg', 'noga4.jpg', 'noga5.jpg'],
+        images: [
+            'noga1.jpg',
+            'noga2.jpg',
+            'noga3.jpg',
+            'noga4.jpg',
+            'noga5.jpg',
+        ],
     },
     {
         id: 'intraosseous_Access_Trainer_EZ_IO',
@@ -1297,12 +1291,18 @@ export const products: Product[] = [
         },
         description: {
             id: 'product.intraosseous_Access_Trainer_EZ_IO.description',
-            defaultMessage: 'Set of two trainers - tibia and humerus - made using 3D printing technology. The model is designed for repeated training in obtaining intraosseous access using the EZ-IO set. The bones are a representation of real anatomical structures - they were created based on 3D scans, which allows them to maintain their full geometry and anatomical fidelity. The surfaces of the bones intended for punctures are interchangeable. After they are worn out, it is possible to replace just the surface without having to replace the entire trainer. The replaceable components can also be restored by filling holes formed as a result of intensive use. The trainers are designed to accommodate a standard 20 ml syringe, which allows for simulation of blood/bone marrow aspiration.',
+            defaultMessage:
+                'Set of two trainers - tibia and humerus - made using 3D printing technology. The model is designed for repeated training in obtaining intraosseous access using the EZ-IO set. The bones are a representation of real anatomical structures - they were created based on 3D scans, which allows them to maintain their full geometry and anatomical fidelity. The surfaces of the bones intended for punctures are interchangeable. After they are worn out, it is possible to replace just the surface without having to replace the entire trainer. The replaceable components can also be restored by filling holes formed as a result of intensive use. The trainers are designed to accommodate a standard 20 ml syringe, which allows for simulation of blood/bone marrow aspiration.',
             pl: 'Zestaw dwóch trenażerów - kość piszczelowa oraz kość ramienna - wykonanych w technologii druku 3D. Model przeznaczony jest do wielokrotnego treningu uzyskiwania dostępu doszpikowego za pomocą zestawu EZ-IO. Kości stanowią odwzorowanie rzeczywistych struktur anatomicznych - powstały na bazie skanów 3D, co pozwala zachować ich pełną geometrię i wierność anatomiczną. Powierzchnie kości przeznaczone do wykonywania wkłuć są wymienne. Po ich zużyciu możliwa jest wymiana samej powierzchni, bez konieczności wymiany całego trenażera. Wymienne elementy mogą być również uzupełniane po powstaniu ubytków wynikających z intensywnego użytkowania. Trenażery są przystosowane do umieszczenia standardowej strzykawki o pojemności 20 ml, która umożliwia symulację aspiracji krwi/szpiku kostnego.',
             en: 'Set of two trainers - tibia and humerus - made using 3D printing technology. The model is designed for repeated training in obtaining intraosseous access using the EZ-IO set. The bones are a representation of real anatomical structures - they were created based on 3D scans, which allows them to maintain their full geometry and anatomical fidelity. The surfaces of the bones intended for punctures are interchangeable. After they are worn out, it is possible to replace just the surface without having to replace the entire trainer. The replaceable components can also be restored by filling holes formed as a result of intensive use. The trainers are designed to accommodate a standard 20 ml syringe, which allows for simulation of blood/bone marrow aspiration.',
         },
         price: 2500,
-        images: ['IOHUMERUS1.jpg', 'IOHUMERUSBONE.jpg', 'IOHUMERUSNTIBIA.jpg', 'IOTibia1.jpg'],
+        images: [
+            'IOHUMERUS1.jpg',
+            'IOHUMERUSBONE.jpg',
+            'IOHUMERUSNTIBIA.jpg',
+            'IOTibia1.jpg',
+        ],
         trainingOptions: [
             {
                 title: {
@@ -1316,7 +1316,8 @@ export const products: Product[] = [
             {
                 title: {
                     id: 'product.intraosseous_Access_Trainer_EZ_IO.trainingOptions.1.title',
-                    defaultMessage: '1x intraosseous access trainer EZ-IO - proximal tibia',
+                    defaultMessage:
+                        '1x intraosseous access trainer EZ-IO - proximal tibia',
                     pl: '1x trenażer uzyskiwania dostępu doszpikowego EZ-IO - kość piszczelowa',
                     en: '1x intraosseous access trainer EZ-IO - proximal tibia',
                 },
@@ -1338,15 +1339,8 @@ export const products: Product[] = [
                     pl: '3x wymienna powierzchnia wkłucia - kość piszczelowa ',
                     en: '3x interchangeable puncture surface - proximal tibia',
                 },
-            }
+            },
         ],
-        priceExtension: {
-            id: 'product.intraosseous_Access_Trainer_EZ_IO.priceExtension',
-            defaultMessage:
-                '<strong>Change of distribution or nature of injuries:</strong> additional 750 PLN',
-            pl: '<strong>Zmiana rozkładu lub charakteru obrażeń:</strong> dopłata 750 PLN',
-            en: '<strong>Change of distribution or nature of injuries:</strong> additional 750 PLN',
-        },
     },
     {
         id: 'additional_pump_with_pressure_gauge_IO',
@@ -1360,9 +1354,9 @@ export const products: Product[] = [
         description: {
             id: 'product.additional_pump_with_pressure_gauge_IO.description',
             defaultMessage:
-                'A pump compatible with simulated bleeding systems, equipped with a pressure gauge that allows control and adjustment of operating pressure.',
-            pl: 'Pompa kompatybilna z systemami symulowanego krwawienia, wyposażona w manometr umożliwiający kontrolę i regulację ciśnienia roboczego.',
-            en: 'A pump compatible with simulated bleeding systems, equipped with a pressure gauge that allows control and adjustment of operating pressure.',
+                'Pump compatible with the simulated bleeding system, equipped with a pressure gauge calibrated in mmHg, allowing for control and adjustment of working pressure.',
+            pl: 'Pompa kompatybilna z systemem symulowanego krwawienia, wyposażona w manometr wyskalowany w mmHg umożliwiający kontrolę i regulację ciśnienia roboczego.',
+            en: 'Pump compatible with the simulated bleeding system, equipped with a pressure gauge calibrated in mmHg, allowing for control and adjustment of working pressure.',
         },
         price: 350,
         images: ['placeholder.png'],
@@ -1389,18 +1383,18 @@ export const products: Product[] = [
             {
                 title: {
                     id: 'product.specialized_glue_silicone_elements_wounds_IO.setContents.0.title',
-                    defaultMessage: 'Does not require the use of a remover.',
-                    pl: 'Nie wymaga stosowania zmywacza.',
-                    en: 'Does not require the use of a remover.',
+                    defaultMessage: 'does not require the use of a remover',
+                    pl: 'nie wymaga stosowania zmywacza',
+                    en: 'does not require the use of a remover',
                 },
             },
             {
                 title: {
                     id: 'product.specialized_glue_silicone_elements_wounds_IO.setContents.1.title',
                     defaultMessage:
-                        'When mixed with an appropriate pigment, it can be used to create realistic injuries directly on the skin of the simulated person.',
-                    pl: 'Po zmieszaniu z odpowiednim pigmentem może być wykorzystany do tworzenia realistycznych obrażeń bezpośrednio na skórze osoby pozorowanej.',
-                    en: 'When mixed with an appropriate pigment, it can be used to create realistic injuries directly on the skin of the simulated person.',
+                        'when mixed with an appropriate pigment, it can be used to create realistic injuries directly on the skin of the simulated person',
+                    pl: 'po zmieszaniu z odpowiednim pigmentem może być wykorzystany do tworzenia realistycznych obrażeń bezpośrednio na skórze osoby pozorowanej',
+                    en: 'when mixed with an appropriate pigment, it can be used to create realistic injuries directly on the skin of the simulated person',
                 },
             },
         ],
@@ -1420,7 +1414,7 @@ export const products: Product[] = [
             id: 'product.silicone_glue_for_repairs_IO.description',
             defaultMessage:
                 'A specialized adhesive intended for repairing silicone elements, enabling quick and durable bonding of damaged parts.',
-            pl: 'Specjalistyczny klej przeznaczony do napraw elementów wykonanych z silikonu, umożliwiający szybkie i trwałe łączenie uszkodzonych fragmentów.',
+            pl: 'Specjalistyczny klej przeznaczony do naprawy elementów wykonanych z silikonu, umożliwiający szybkie i trwałe łączenie uszkodzonych fragmentów.',
             en: 'A specialized adhesive intended for repairing silicone elements, enabling quick and durable bonding of damaged parts.',
         },
         price: 300,

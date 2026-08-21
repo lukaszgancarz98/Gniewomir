@@ -21,7 +21,7 @@ export default function Product({ tag }: { tag: string }) {
     }
 
     const bottomInfoClassName =
-        'text-center w-[60%] py-10 px-10 text-xl border-t-[1px] border-gray-300';
+        'text-start w-[60%] py-10 px-10 text-xl border-t-[1px] border-gray-300';
     const onlyDescription =
         findProduct.description &&
         !findProduct.setContents &&
@@ -33,7 +33,7 @@ export default function Product({ tag }: { tag: string }) {
     return (
         <Header
             title={translator(commonMessages.brandName)}
-            image="/placeholder.png"
+            image="/logo-v3.png"
             enableLangage
             menu={[
                 {
@@ -80,12 +80,12 @@ export default function Product({ tag }: { tag: string }) {
                         <Slider findProduct={findProduct} />
                     </div>
                     <div className="w-full flex flex-col items-start justify-start">
-                        <div className="flex items-center justify-start w-full text-4xl font-semibold p-3 pr-10 text-center">
+                        <div className="flex items-start justify-start w-full text-4xl font-semibold p-3 text-start">
                             {translator(findProduct.name)}
                         </div>
                         <div className="w-full h-full flex flex-col justify-between">
                             <div>
-                                <div className="text-2xl font-medium flex justify-start pl-10 py-4">
+                                <div className="text-2xl font-medium flex justify-start py-4">
                                     Cena{findProduct.pricePrefix ? ' od' : ''}:{' '}
                                     {findProduct.price} PLN
                                 </div>
@@ -98,34 +98,81 @@ export default function Product({ tag }: { tag: string }) {
                                                 )}
                                             </div>
                                         )}
-                                        <div className="pl-7">
+                                        <div id="setContents" className="pl-7">
                                             {findProduct.setContents.map(
-                                                (content) => (
-                                                    <div key={content.title.id}>
-                                                        -&nbsp;&nbsp;
-                                                        {translator(
-                                                            content.title,
-                                                        )}
-                                                        {content.items &&
-                                                            content.items.map(
-                                                                (item) => {
-                                                                    return (
-                                                                        <div
-                                                                            key={
-                                                                                item.id
-                                                                            }
-                                                                            className="pl-7"
-                                                                        >
-                                                                            ·&nbsp;&nbsp;
-                                                                            {translator(
-                                                                                item,
-                                                                            )}
-                                                                        </div>
-                                                                    );
-                                                                },
+                                                (content, index) => {
+                                                    const isLastItem = () => {
+                                                        if (
+                                                            findProduct.setContents &&
+                                                            index ===
+                                                                findProduct
+                                                                    .setContents
+                                                                    .length -
+                                                                    1
+                                                        ) {
+                                                            return '.';
+                                                        }
+
+                                                        return ',';
+                                                    };
+                                                    const haveItems =
+                                                        content.items &&
+                                                        content.items.length >
+                                                            0;
+
+                                                    return (
+                                                        <div
+                                                            key={
+                                                                content.title.id
+                                                            }
+                                                        >
+                                                            -&nbsp;&nbsp;
+                                                            {translator(
+                                                                content.title,
                                                             )}
-                                                    </div>
-                                                ),
+                                                            {haveItems
+                                                                ? ''
+                                                                : isLastItem()}
+                                                            {content.items &&
+                                                                content.items.map(
+                                                                    (
+                                                                        item,
+                                                                        index,
+                                                                    ) => {
+                                                                        const isAddLastItem =
+                                                                            () => {
+                                                                                if (
+                                                                                    content.items &&
+                                                                                    index ===
+                                                                                        content
+                                                                                            .items
+                                                                                            .length -
+                                                                                            1
+                                                                                ) {
+                                                                                    return '.';
+                                                                                }
+
+                                                                                return ',';
+                                                                            };
+                                                                        return (
+                                                                            <div
+                                                                                key={
+                                                                                    item.id
+                                                                                }
+                                                                                className="pl-7"
+                                                                            >
+                                                                                ·&nbsp;&nbsp;
+                                                                                {translator(
+                                                                                    item,
+                                                                                )}
+                                                                                {isAddLastItem()}
+                                                                            </div>
+                                                                        );
+                                                                    },
+                                                                )}
+                                                        </div>
+                                                    );
+                                                },
                                             )}
                                         </div>
                                     </div>
@@ -134,7 +181,7 @@ export default function Product({ tag }: { tag: string }) {
                                     <div className="pt-5 w-[90%]">
                                         <div className="text-xl font-bold">
                                             {translator(
-                                                messages.setContentsTitle,
+                                                messages.modificationOptionsTitle,
                                             )}
                                         </div>
                                         <div className="pl-7">
@@ -153,7 +200,7 @@ export default function Product({ tag }: { tag: string }) {
                                     <div className="pt-5 w-[90%]">
                                         <div className="text-xl font-bold">
                                             {translator(
-                                                messages.setContentsTitle,
+                                                messages.availableVariantsTitle,
                                             )}
                                         </div>
                                         <div className="pl-7">
@@ -174,7 +221,7 @@ export default function Product({ tag }: { tag: string }) {
                                     <div className="pt-5 w-[90%]">
                                         <div className="text-xl font-bold">
                                             {translator(
-                                                messages.setContentsTitle,
+                                                messages.simulatedDamageTitle,
                                             )}
                                         </div>
                                         <div className="pl-7">
@@ -195,7 +242,7 @@ export default function Product({ tag }: { tag: string }) {
                                     <div className="pt-5 w-[90%]">
                                         <div className="text-xl font-bold">
                                             {translator(
-                                                messages.setContentsTitle,
+                                                messages.trainingOptionsTitle,
                                             )}
                                         </div>
                                         <div className="pl-7">
@@ -213,7 +260,10 @@ export default function Product({ tag }: { tag: string }) {
                                     </div>
                                 )}
                                 {onlyDescription && (
-                                    <div className="pt-5 text-xl w-[90%]">
+                                    <div
+                                        id="onlyDescription"
+                                        className="pt-5 text-xl w-[90%]"
+                                    >
                                         {translator(findProduct.description)}
                                     </div>
                                 )}
@@ -228,6 +278,7 @@ export default function Product({ tag }: { tag: string }) {
                 </div>
                 {!onlyDescription && (
                     <div
+                        id="description"
                         className={`${bottomInfoClassName} ${findProduct.additionalInfo ? '' : 'mb-15'}`}
                     >
                         {translator(findProduct.description)}

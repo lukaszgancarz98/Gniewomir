@@ -17,7 +17,7 @@ export default function AboutUs() {
     return (
         <Header
             title={translator(commonMessages.brandName)}
-            image="/placeholder.png"
+            image="/logo-v3.png"
             enableLangage
         >
             <div className="flex flex-col bg-white text-black min-h-screen pt-10 pb-20 items-center">
