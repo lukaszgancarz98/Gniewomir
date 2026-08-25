@@ -29,10 +29,10 @@ export default function page() {
                     <input
                         type="text"
                         placeholder="Tytuł wiadomości"
-                        className="w-[800px] border-1 p-2 text-xl border-b-0 rounded-t"
+                        className="w-[800px] border-1 p-2 text-xl border-b-0 rounded-t bg-white"
                     />
                     <textarea
-                        className="w-[800px] h-[200px] border-1 p-2 text-xl rounded-b"
+                        className="w-[800px] h-[200px] border-1 p-2 text-xl rounded-b bg-white"
                         placeholder="Napisz do nas wiadomość"
                     />
                     <button className="w-[150px] text-black px-4 py-2 rounded hover:scale-120 hover:text-bold transition-all duration-200">

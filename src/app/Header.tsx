@@ -8,6 +8,8 @@ import Dropdown from 'antd/es/dropdown/dropdown';
 import translator, { MessageObject } from './translator';
 import Spinner from '@/components/Spinner';
 import Link from 'next/link';
+import SearchBar from './SearchBar';
+import { Product, products } from './products/products';
 
 type LanguageItem = { key: string; label: React.ReactNode };
 
@@ -225,18 +227,29 @@ export default function Header({
                         <Image src={image} alt={'Logo'} fill />
                     </Link>
                 )}
-                <div id="productTypeTitle" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex items-center justify-center">
+                <div
+                    id="productTypeTitle"
+                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex items-center justify-center"
+                >
                     <Link href="/" className="text-center text-7xl z-20 w-full">
                         {title}
                     </Link>
                 </div>
+                <SearchBar
+                    minSearchLength={2}
+                    className="absolute right-0 bottom-0 z-20 mr-10 pb-5"
+                    products={products}
+                />
             </div>
             <div
                 className={`text-black min-h-screen pt-40 h-auto ${childClassName} bg-[oklch(0.79_0.02_343.73)]`}
             >
                 {children}
             </div>
-            <div id="footer" className="w-full h-40 bg-white text-black flex items-center justify-evenly w-full px-10">
+            <div
+                id="footer"
+                className="w-full h-40 bg-white text-black flex items-center justify-evenly w-full px-10"
+            >
                 <div>Polityka prywatności i pliki cookie</div>
                 <div>Warunki zakupu</div>
                 <div>Metody wysyłki</div>

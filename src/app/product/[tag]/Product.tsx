@@ -50,7 +50,7 @@ export default function Product({ tag }: { tag: string }) {
             <div className="flex flex-col w-full min-h-[calc(100vh-theme(space.40))] items-center">
                 <Link
                     href={`/products/${findProduct.tag}`}
-                    className="text-xl flex justify-center w-[90%] py-5 border-b-[1px] border-gray-300 group gap-2"
+                    className="text-xl flex justify-center w-full py-5 border-b-[1px] border-gray-300 group gap-2 bg-white"
                 >
                     <svg
                         width="30px"

@@ -29,4 +29,10 @@ export const messages = {
         pl: 'Kontakt',
         en: 'Contact',
     },
+    searchPlaceholder: {
+        id: 'search.placeholder',
+        defaultMessage: 'Search...',
+        pl: 'Szukaj...',
+        en: 'Search...',
+    },
 };

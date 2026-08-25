@@ -48,7 +48,7 @@ export default function Products({ tag }: { tag: string }) {
             ]}
         >
             <div className="relative flex flex-col flex-wrap w-full h-full justify-center items-center pt-0">
-                <div className="fixed top-40 flex justify-start w-full h-[50px] z-30 border-b-1 border-[oklch(0.79_0.02_343.73)]">
+                <div className="fixed top-40 flex justify-start w-full h-[60px] z-30 border-b-1 border-[oklch(0.79_0.02_343.73)]">
                     <div className="relative bg-white py-3 px-4 w-full">
                         <Link
                             href="/"
