@@ -18,7 +18,7 @@ export default function MainPageProducts({ products }: MainPageProductsProps) {
                         >
                             <div className="relative flex justify-center mt-4 group-hover:opacity-30 transition-all duration-300">
                                 <img
-                                    src={`/${product.images[0]}`}
+                                    src={`/${product.images?.[0]}`}
                                     alt={product.name.id}
                                     className="w-[250px] h-[250px] object-scale-down"
                                 />

@@ -5,6 +5,10 @@ export default function Slider({ findProduct }: { findProduct: Product }) {
     const images = findProduct.images;
     const [index, setIndex] = useState(0);
 
+    if (!images || images.length === 0) {
+        return null;
+    }
+
     const next = () => setIndex((i) => (i + 1) % images.length);
     const prev = () => setIndex((i) => (i - 1 + images.length) % images.length);
 
