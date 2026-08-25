@@ -47,12 +47,12 @@ export default function Products({ tag }: { tag: string }) {
                 },
             ]}
         >
-            <div className="flex flex-col flex-wrap w-full h-full justify-center items-center pt-0">
-                <div className="relative flex justify-start w-full">
+            <div className="relative flex flex-col flex-wrap w-full h-full justify-center items-center pt-0">
+                <div className="fixed top-40 flex justify-start w-full h-[50px] z-30 border-b-1 border-[oklch(0.79_0.02_343.73)]">
                     <div className="relative bg-white py-3 px-4 w-full">
                         <Link
                             href="/"
-                            className="text-xl font-medium z-20 group flex flex-row gap-2"
+                            className="relative z-15 text-xl font-medium z-20 group flex flex-row gap-2"
                         >
                             <svg
                                 width="30px"
@@ -75,11 +75,11 @@ export default function Products({ tag }: { tag: string }) {
                             </div>
                         </Link>
                     </div>
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50%] z-10 text-3xl font-medium text-center">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] z-10 text-3xl font-medium text-center">
                         {productType ? translator(productType.title) : ''}
                     </div>
                 </div>
-                <div className="relative flex justify-center w-[90%] px-10">
+                <div className="relative flex justify-center pt-[50px] w-[90%] px-10 z-20">
                     {tag !== 'individual_offers' ? (
                         <div className="flex flex-row flex-wrap w-screen h-full justify-center items-center p-10 gap-5">
                             {productsList?.map((product) => {

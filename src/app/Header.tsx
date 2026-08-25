@@ -60,9 +60,25 @@ export default function Header({
     return (
         <div className="relative z-10">
             <div className="fixed top-0 left-0 w-full flex flex-col h-40 text-black z-50 bg-white">
-                <div className="flex justify-between w-full items-center h-[60px]">
+                <div className="relative flex flex-row-reverse justify-between w-full items-center h-[80px]">
+                    {enableLangage && (
+                        <div className="z-50 h-[30px] w-auto p-3 pr-7">
+                            <Dropdown
+                                menu={{ items: languageItems }}
+                                placement="bottomCenter"
+                            >
+                                <div className="text-[oklch(0.79_0.02_343.73)]">
+                                    {
+                                        availableLanguages.find(
+                                            (lang) => lang.code === language,
+                                        )?.name
+                                    }
+                                </div>
+                            </Dropdown>
+                        </div>
+                    )}
                     {menu && (
-                        <div className="flex flex-row justify-start gap-8 pl-10 py-3">
+                        <div className="relative flex flex-row justify-start gap-8 pl-10 py-3 z-60">
                             <div className="flex flex-row gap-10 text-3xl justify-evenly my-2 h-[40px]">
                                 {menu.map((item) =>
                                     item.usePopover ? (
@@ -192,22 +208,6 @@ export default function Header({
                             </div>
                         </div>
                     )}
-                    {enableLangage && (
-                        <div className="z-50 h-[30px] w-auto p-3 pr-7">
-                            <Dropdown
-                                menu={{ items: languageItems }}
-                                placement="bottomCenter"
-                            >
-                                <div className="text-[oklch(0.79_0.02_343.73)]">
-                                    {
-                                        availableLanguages.find(
-                                            (lang) => lang.code === language,
-                                        )?.name
-                                    }
-                                </div>
-                            </Dropdown>
-                        </div>
-                    )}
                 </div>
                 {image && menu && (
                     <Link
@@ -225,8 +225,8 @@ export default function Header({
                         <Image src={image} alt={'Logo'} fill />
                     </Link>
                 )}
-                <div className="flex items-center w-full justify-center">
-                    <Link href="/" className="text-center text-7xl z-20">
+                <div id="productTypeTitle" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex items-center justify-center">
+                    <Link href="/" className="text-center text-7xl z-20 w-full">
                         {title}
                     </Link>
                 </div>
@@ -235,6 +235,11 @@ export default function Header({
                 className={`text-black min-h-screen pt-40 h-auto ${childClassName} bg-[oklch(0.79_0.02_343.73)]`}
             >
                 {children}
+            </div>
+            <div id="footer" className="w-full h-40 bg-white text-black flex items-center justify-evenly w-full px-10">
+                <div>Polityka prywatności i pliki cookie</div>
+                <div>Warunki zakupu</div>
+                <div>Metody wysyłki</div>
             </div>
         </div>
     );
