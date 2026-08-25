@@ -59,74 +59,92 @@ export default function Header({
 
     return (
         <div className="relative z-10">
-            <div className="fixed top-0 left-0 w-full justify-start h-40 items-center text-black z-50 bg-white">
-                {menu && (
-                    <div className="flex flex-row justify-start gap-8 w-[50%] w-full pl-10">
-                        <div className="flex flex-row gap-10 text-3xl justify-evenly my-2">
-                            {menu.map((item) =>
-                                item.usePopover ? (
-                                    <div
-                                        key={item.key}
-                                        className="relative inline-block group"
-                                    >
-                                        <div>{translator(item.label)}</div>
+            <div className="fixed top-0 left-0 w-full flex flex-col h-40 text-black z-50 bg-white">
+                <div className="flex justify-between w-full items-center h-[60px]">
+                    {menu && (
+                        <div className="flex flex-row justify-start gap-8 pl-10 py-3">
+                            <div className="flex flex-row gap-10 text-3xl justify-evenly my-2 h-[40px]">
+                                {menu.map((item) =>
+                                    item.usePopover ? (
                                         <div
-                                            className="
-                                                absolute left-0 top-full w-[500px] p-7
-                                                bg-white shadow-lg rounded
-                                                opacity-0 invisible z-100
-                                                group-hover:opacity-100 group-hover:visible
-                                                transition-all duration-200"
+                                            key={item.key}
+                                            className="relative inline-block group transition-transform hover:scale-120"
                                         >
-                                            <div className="text-black text-xl flex flex-col gap-3 px-5">
-                                                {offerMenu.map(
-                                                    (offer, index) => {
-                                                        if (
-                                                            item.disabledChoice ===
-                                                            offer.tag
-                                                        ) {
+                                            <div>{translator(item.label)}</div>
+                                            <div
+                                                className="
+                                                    absolute left-0 top-full w-[500px] p-7
+                                                    bg-white shadow-lg rounded
+                                                    opacity-0 invisible z-50
+                                                    group-hover:opacity-100 group-hover:visible
+                                                    transition-all duration-200"
+                                            >
+                                                <div className="text-black text-xl flex flex-col gap-3 px-5">
+                                                    {offerMenu.map(
+                                                        (offer, index) => {
+                                                            if (
+                                                                item.disabledChoice ===
+                                                                offer.tag
+                                                            ) {
+                                                                return (
+                                                                    <div className="text-gray-500 text-center w-auto">
+                                                                        {translator(
+                                                                            offer.title,
+                                                                        )}
+                                                                    </div>
+                                                                );
+                                                            }
+
                                                             return (
-                                                                <div className="text-gray-500 text-center w-auto">
+                                                                <Link
+                                                                    key={index}
+                                                                    href={`/products/${offer.tag}`}
+                                                                    className="block text-black text-center transition-transform hover:scale-120 w-auto hover:text-blue-500"
+                                                                >
                                                                     {translator(
                                                                         offer.title,
                                                                     )}
-                                                                </div>
+                                                                </Link>
                                                             );
-                                                        }
-
-                                                        return (
-                                                            <Link
-                                                                key={index}
-                                                                href={`/products/${offer.tag}`}
-                                                                className="block text-black text-center transition-transform hover:scale-120 w-auto hover:text-blue-500"
-                                                            >
-                                                                {translator(
-                                                                    offer.title,
-                                                                )}
-                                                            </Link>
-                                                        );
-                                                    },
-                                                )}
+                                                        },
+                                                    )}
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                ) : (
-                                    <Link
-                                        key={item.key}
-                                        href={item.href}
-                                        className="text-3xl transition-transform hover:scale-120"
-                                    >
-                                        {translator(item.label)}
-                                    </Link>
-                                ),
-                            )}
+                                    ) : (
+                                        <Link
+                                            key={item.key}
+                                            href={item.href}
+                                            className="text-3xl transition-transform hover:scale-120"
+                                        >
+                                            {translator(item.label)}
+                                        </Link>
+                                    ),
+                                )}
+                            </div>
                         </div>
-                    </div>
-                )}
+                    )}
+                    {enableLangage && (
+                        <div className="z-50 h-[30px] w-auto p-3 pr-7">
+                            <Dropdown
+                                menu={{ items: languageItems }}
+                                placement="bottomCenter"
+                            >
+                                <div className="text-[oklch(0.79_0.02_343.73)]">
+                                    {
+                                        availableLanguages.find(
+                                            (lang) => lang.code === language,
+                                        )?.name
+                                    }
+                                </div>
+                            </Dropdown>
+                        </div>
+                    )}
+                </div>
                 {image && menu && (
                     <Link
                         href="/"
-                        className="absolute top-1/3 left-5 h-28 w-28 z-50"
+                        className="absolute top-1/3 left-5 h-25 w-25 z-20"
                     >
                         <Image src={image} alt={'Logo'} fill />
                     </Link>
@@ -134,30 +152,16 @@ export default function Header({
                 {image && !menu && (
                     <Link
                         href="/"
-                        className="absolute top-1/5 left-5 h-28 w-28 z-50"
+                        className="absolute top-1/5 left-5 h-28 w-28 z-20"
                     >
                         <Image src={image} alt={'Logo'} fill />
                     </Link>
                 )}
-                <Link href="/" className="absolute top-1/3 w-full text-center text-7xl">
-                    {title}
-                </Link>
-                {enableLangage && (
-                    <div className="absolute top-3 right-3 z-50 h-[30px] w-[30px]">
-                        <Dropdown
-                            menu={{ items: languageItems }}
-                            placement="bottomRight"
-                        >
-                            <div className="ring ring-black">
-                                {
-                                    availableLanguages.find(
-                                        (lang) => lang.code === language,
-                                    )?.flag
-                                }
-                            </div>
-                        </Dropdown>
-                    </div>
-                )}
+                <div className="flex items-center w-full justify-center">
+                    <Link href="/" className="text-center text-7xl z-20">
+                        {title}
+                    </Link>
+                </div>
             </div>
             <div
                 className={`text-black min-h-screen pt-40 h-auto ${childClassName} bg-[oklch(0.79_0.02_343.73)]`}

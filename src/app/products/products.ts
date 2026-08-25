@@ -9,7 +9,7 @@ export type Product = {
     setContents?: { title: MessageObject; items?: MessageObject[] }[];
     modificationOptions?: MessageObject[];
     price: number;
-    images: string[];
+    images?: string[];
     additionalInfo?: MessageObject;
     availableVariants?: { title: MessageObject }[];
     simulatedDamage?: { title: MessageObject }[];
@@ -929,7 +929,6 @@ export const products: Product[] = [
             en: 'A silicone cast depicting an upper limb amputation at elbow level. Intended for use as a moulage element, e.g. in scenarios with multiple casualties or during training in securing severed limbs. Does not feature hemorrhage simulation.',
         },
         price: 1900,
-        images: ['placeholder.png'],
     },
     {
         id: 'silicone_forearm_with_selected_injuries',
@@ -995,7 +994,6 @@ export const products: Product[] = [
             en: 'A silicone trainer depicting a partial hand amputation. The partially amputated hand is attached to a cuff that covers part of the simulated person’s limb. Enables training in controlling massive hemorrhage, wound management, and stabilization of the injured limb.',
         },
         price: 1200,
-        images: ['placeholder.png'],
     },
     {
         id: 'silicone_forearm_with_slowly_oozing_hemorrhage',
@@ -1359,7 +1357,6 @@ export const products: Product[] = [
             en: 'Pump compatible with the simulated bleeding system, equipped with a pressure gauge calibrated in mmHg, allowing for control and adjustment of working pressure.',
         },
         price: 350,
-        images: ['placeholder.png'],
     },
     {
         id: 'specialized_glue_silicone_elements_wounds_IO',
@@ -1399,7 +1396,6 @@ export const products: Product[] = [
             },
         ],
         price: 300,
-        images: ['placeholder.png'],
     },
     {
         id: 'silicone_glue_for_repairs_IO',
@@ -1418,6 +1414,5 @@ export const products: Product[] = [
             en: 'A specialized adhesive intended for repairing silicone elements, enabling quick and durable bonding of damaged parts.',
         },
         price: 300,
-        images: ['placeholder.png'],
     },
 ];

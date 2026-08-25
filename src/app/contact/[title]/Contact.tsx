@@ -42,7 +42,6 @@ export default function Contact({ title }: { title: string }) {
     return (
         <Header
             title={translator(commonMessages.brandName)}
-            image="/logo-v3.png"
             enableLangage
             menu={[
                 {

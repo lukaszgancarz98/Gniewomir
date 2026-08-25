@@ -33,7 +33,6 @@ export default function Product({ tag }: { tag: string }) {
     return (
         <Header
             title={translator(commonMessages.brandName)}
-            image="/logo-v3.png"
             enableLangage
             menu={[
                 {

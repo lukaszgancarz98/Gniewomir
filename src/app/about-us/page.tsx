@@ -15,11 +15,7 @@ const dispalyMessages: Array<keyof typeof messages> = [
 
 export default function AboutUs() {
     return (
-        <Header
-            title={translator(commonMessages.brandName)}
-            image="/logo-v3.png"
-            enableLangage
-        >
+        <Header title={translator(commonMessages.brandName)} enableLangage>
             <div className="flex flex-col bg-white text-black min-h-screen pt-10 pb-20 items-center">
                 <div className="text-4xl">{translator(messages.title)}</div>
                 <div className="flex flex-col items-start gap-6 text-xl w-[80%]">
