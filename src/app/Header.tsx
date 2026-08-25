@@ -68,9 +68,36 @@ export default function Header({
                                     item.usePopover ? (
                                         <div
                                             key={item.key}
-                                            className="relative inline-block group transition-transform hover:scale-120"
+                                            className="
+                                                relative text-3xl font-medium
+                                                transition-colors duration-300
+                                                hover:text-[oklch(0.79_0.02_343.73)]
+                                                group
+                                            "
                                         >
                                             <div>{translator(item.label)}</div>
+                                            <span
+                                                className="
+                                                    absolute left-0 -bottom-0
+                                                    w-full h-[2px]
+                                                    bg-[oklch(0.79_0.02_343.73)]
+                                                    origin-center
+                                                    scale-x-0
+                                                    transition-transform duration-300
+                                                    group-hover:scale-x-100
+                                                "
+                                            />
+                                            <span
+                                                className="
+                                                    absolute left-0 -bottom-1
+                                                    w-full h-[2px]
+                                                    bg-[oklch(0.79_0.02_343.73)]
+                                                    origin-center
+                                                    scale-x-0
+                                                    transition-transform duration-300
+                                                    group-hover:scale-x-100
+                                                "
+                                            />
                                             <div
                                                 className="
                                                     absolute left-0 top-full w-[500px] p-7
@@ -87,7 +114,12 @@ export default function Header({
                                                                 offer.tag
                                                             ) {
                                                                 return (
-                                                                    <div className="text-gray-500 text-center w-auto">
+                                                                    <div
+                                                                        className="text-gray-500 text-center w-auto border-b-1 border-gray-500 pb-2"
+                                                                        key={
+                                                                            index
+                                                                        }
+                                                                    >
                                                                         {translator(
                                                                             offer.title,
                                                                         )}
@@ -95,15 +127,24 @@ export default function Header({
                                                                 );
                                                             }
 
+                                                            const borderClass =
+                                                                index ===
+                                                                offerMenu.length -
+                                                                    1
+                                                                    ? ''
+                                                                    : 'border-b-1 border-gray-500 pb-2';
+
                                                             return (
                                                                 <Link
                                                                     key={index}
                                                                     href={`/products/${offer.tag}`}
-                                                                    className="block text-black text-center transition-transform hover:scale-120 w-auto hover:text-blue-500"
+                                                                    className={`block ${borderClass}`}
                                                                 >
-                                                                    {translator(
-                                                                        offer.title,
-                                                                    )}
+                                                                    <div className="text-black text-center transition-transform hover:scale-120 w-auto hover:text-[oklch(0.79_0.02_343.73)]">
+                                                                        {translator(
+                                                                            offer.title,
+                                                                        )}
+                                                                    </div>
                                                                 </Link>
                                                             );
                                                         },
@@ -115,9 +156,36 @@ export default function Header({
                                         <Link
                                             key={item.key}
                                             href={item.href}
-                                            className="text-3xl transition-transform hover:scale-120"
+                                            className="
+                                                relative text-3xl font-medium
+                                                transition-colors duration-300
+                                                hover:text-[oklch(0.79_0.02_343.73)]
+                                                group
+                                            "
                                         >
                                             {translator(item.label)}
+                                            <span
+                                                className="
+                                                    absolute left-0 -bottom-0
+                                                    w-full h-[2px]
+                                                    bg-[oklch(0.79_0.02_343.73)]
+                                                    origin-center
+                                                    scale-x-0
+                                                    transition-transform duration-300
+                                                    group-hover:scale-x-100
+                                                "
+                                            />
+                                            <span
+                                                className="
+                                                    absolute left-0 -bottom-1
+                                                    w-full h-[2px]
+                                                    bg-[oklch(0.79_0.02_343.73)]
+                                                    origin-center
+                                                    scale-x-0
+                                                    transition-transform duration-300
+                                                    group-hover:scale-x-100
+                                                "
+                                            />
                                         </Link>
                                     ),
                                 )}
